@@ -1,0 +1,176 @@
+/*************************************************************************
+ * Your custom CSS file
+ *************************************************************************/
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Italic.ttf");
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+
+.custom-dropdown {
+  width: 240px;
+}
+
+.custom-textbox {
+  width: 240px;
+}
+
+html, body {
+  font-family: Raleway;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #0e3dcc;
+}
+
+a:hover {
+  color: #08899e;
+}
+
+a.anchor{
+  display: block;
+  position: relative;
+  top: -85px;
+  visibility: hidden;
+}
+
+h1 {
+  font-size: 18pt;
+  margin: 0 0 0 0;
+  line-height: 140%;
+}
+
+h2 {
+  font-size: 16pt;
+  font-weight: bold;
+  margin: 0 0 0 0;
+  line-height: 140%;
+  padding-bottom: 10px;
+}
+
+div {
+  word-wrap: break-word;
+}
+
+#me {
+    width: 180px;
+    border-radius: 50%;
+}
+
+#dialog-1,
+#dialog-2,
+#dialog-3,
+#dialog-4,
+#share-dialog {
+  display: none;
+}
+
+#share-url {
+  width: 100%;
+  -webkit-touch-callout: default !important;
+  -webkit-user-select: text !important;
+  -khtml-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+#share-url-copy-prompt {
+  display: none;
+  color: #007bff;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-hover tbody:hover {
+  background-color: rgba(100, 200, 170, 0.15) !important;
+}
+
+.classFiltering {
+  float: left;
+  background-color: #0a4d82ba;
+  color: #ffffff;
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.classBtn {
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  font-family: Raleway;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  border-radius:50px 50px 50px 50px;
+}
+
+.classBtn.active {
+  background: #7876d061;
+  border: 1px solid #ff91cb;
+  border-radius:50px 50px 50px 50px;
+}
+
+.classBtn:hover {
+  transition: 0.3s ease-in-out;
+  background: #7876d061;
+  border-radius:50px 50px 50px 50px;
+}
+
+.classColumn {
+  float: left;
+  padding: 12px;
+}
+
+.classLeft {
+  width: 30%;
+}
+
+.classMiddle, .classRight {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul, li {margin-left: 1em; padding-left: 5px;}
