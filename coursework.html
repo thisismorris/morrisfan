@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174929475-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-174929475-1');
+  </script>
+  <title>Morris Fan Coursework</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/widgets.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/custom.js"></script>
+  <style>
+    .menu-coursework {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <h2>Classes By Category</h2>
+        <a class="anchor" id="categorizedclasses"></a>
+        <hr>
+        <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to filter the classes I've taken (displays classes satisfying <i>all</i> selected criteria). For a complete list, see <a href="#fullcourses">below!</a></p>
+        <div id="classButtons">
+          <button id="all" class="classBtn active" onclick="displayFiltered()"> All Classes</button>
+          <button id="tech" class="classBtn" onclick="displayFiltered()"> Technical </button>
+          <button id="ana" class="classBtn" onclick="displayFiltered()"> Analog </button>
+          <button id="dig" class="classBtn" onclick="displayFiltered()"> Digital </button>
+          <button id="cs" class="classBtn" onclick="displayFiltered()"> CS </button>
+          <button id="sld" class="classBtn" onclick="displayFiltered()"> Solid-State </button>
+          <button id="mech" class="classBtn" onclick="displayFiltered()"> Mechanics </button>
+          <button id="math" class="classBtn" onclick="displayFiltered()"> Math </button>
+          <button id="phy" class="classBtn" onclick="displayFiltered()"> Physics </button>
+        </div>
+        <div class="container">
+          <div class="classFiltering all tech ana">EL ENG 140</div>
+          <div class="classFiltering all tech ana">EE 3225</div>
+          <div class="classFiltering all tech ana">EE 3230</div>
+          <div class="classFiltering all tech ana">EE 351000</div>
+          <div class="classFiltering all tech ana">EE 224501</div>
+          <div class="classFiltering all tech ana">EE 2255</div>
+          <div class="classFiltering all tech ana">EC ENGR 3</div>
+          <div class="classFiltering all tech ana">EE 390000</div>
+          <div class="classFiltering all tech ana">EE 391000</div>
+          <div class="classFiltering all tech dig">EECS 151</div>
+          <div class="classFiltering all tech dig">EECS 151 LA</div>
+          <div class="classFiltering all tech dig">ET3305303</div>
+          <div class="classFiltering all tech dig">ET3806303</div>
+          <div class="classFiltering all tech cs">CS61C</div>
+          <div class="classFiltering all tech cs">ET3405303</div>
+          <div class="classFiltering all tech ana sld">EE 3350</div>
+          <div class="classFiltering all tech ana sld">EE 432000</div>
+          <div class="classFiltering all tech math">EECS203001</div>
+          <div class="classFiltering all tech math">EE 202000</div>
+          <div class="classFiltering all tech math">EE 224501</div>
+          <div class="classFiltering all tech math">EE 206000</div>
+          <div class="classFiltering all tech math">EE 306001</div>
+          <div class="classFiltering all tech math">ET161A002</div>
+          <div class="classFiltering all tech math">ET161B002</div>
+          <div class="classFiltering all tech phy">EC163A006</div>
+          <div class="classFiltering all tech phy">EC163B006</div>
+          <div class="classFiltering all tech phy">ET173A002</div>
+          <div class="classFiltering all tech phy">ET173B002</div>
+          <div class="classFiltering all tech ana mech">EE 384000</div>
+        </div>
+      </div>
+      <div class="content-table flex-column">
+        <h2>Complete Coursework</h2>
+        <a class="anchor" id="fullcourses"></a>
+        <hr>
+        <p class="text add-top-margin add-bottom-margin"> Here's a full listing of all my coursework (including associated grades, professors, and semester.) </p>
+        <table class="custom-table" style="width:100%;">
+          <thead style="background-color: rgba(224, 171, 193, 0.3)">
+            <tr class="text-center">
+              <th class="col-md-2 center">Berkeley Abbreviation</th>
+              <th class="col-md-5 center">Topics</th>
+              <th class="col-md-1 center">Grade</th>
+              <th class="col-md-2 center">Professor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Fall 2023</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www2.eecs.berkeley.edu/Courses/EECS151/" target="_blank">EECS 151</a></td>
+              <td class="text-left col-md-4">Introduction to Digital Design Integrated Circuits</td>
+              <td class="text-center">in progress</td>
+              <td class="text-center">Bora Nikolic</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www2.eecs.berkeley.edu/Courses/EECS151LA/" target="_blank">EECS 151 LA</a></td>
+              <td class="text-left col-md-4">Application Specific Integrated Circuits Laboratory (ASIC Lab.)</td>
+              <td class="text-center">in progress</td>
+              <td class="text-center">Bora Nikolic</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www2.eecs.berkeley.edu/Courses/EE140/" target="_blank">EL ENG 140</a></td>
+              <td class="text-left col-md-4">Linear Integrated Circuits</td>
+              <td class="text-center">in progress</td>
+              <td class="text-center">Rikky Muller</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www2.eecs.berkeley.edu/Courses/CS61C/" target="_blank">COMPSCI 61C</a></td>
+              <td class="text-left col-md-4">Great Ideas of Computer Architecture (Machine Structures)</td>
+              <td class="text-center">in progress</td>
+              <td class="text-center">Dan Garcia, Justin Yokota</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=u2dlcm84citk46t4vh8vpujl35&c_key=11210EE%20%20391000" target="_blank">EE 391000</a></td>
+              <td class="text-left col-md-4">Special Topic on Implementation (II) (NTHU)</td>
+              <td class="text-center">in progress</td>
+              <td class="text-center">Kea-Tiong (Samuel) Tang</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="custom-table" style="width:100%;">
+          <thead style="background-color: rgba(224, 171, 193, 0.3)">
+            <tr class="text-center">
+              <th class="col-md-2 center">NTHU Abbreviation</th>
+              <th class="col-md-5 center">Topics</th>
+              <th class="col-md-1 center">Grade</th>
+              <th class="col-md-2 center">Professor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Spring 2023</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=44f3tck5dbbtfag3du13obaup5&c_key=11120EE%20%20202000" target="_blank">EE 202000</a></td>
+              <td class="text-left col-md-4">Partial Differential Equations and Complex Variables</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">YANG, YA-TANG</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=44f3tck5dbbtfag3du13obaup5&c_key=11120EE%20%20306001" target="_blank">EE 306001</a></td>
+              <td class="text-left col-md-4">Probability</td>
+              <td class="text-center">B+</td>
+              <td class="text-center">LU, CHUNG-CHIN</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=44f3tck5dbbtfag3du13obaup5&c_key=11120EE%20%20384000" target="_blank">EE 384000</a></td>
+              <td class="text-left col-md-4">Electrical Machinery Laboratory</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">CHANG, YUAN-CHIH</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=44f3tck5dbbtfag3du13obaup5&c_key=11120EE%20%20432000" target="_blank">EE 432000</a></td>
+              <td class="text-left col-md-4">Solid-State Electronics Laboratory-Semiconductor Processing</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">CHIU, PO-WEN</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=44f3tck5dbbtfag3du13obaup5&c_key=11120EE%20%20390000" target="_blank">EE 390000</a></td>
+              <td class="text-left col-md-4">Special Topic on Implementation (I)</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Kea-Tiong (Samuel) Tang</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Fall 2022</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=et1m1n5ub28quqlkr99vicau41&c_key=11110EE%20%20224501" target="_blank">EE 224501</a></td>
+              <td class="text-left col-md-4">Microelectronics Labs.</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">CHEN, HSIN</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=et1m1n5ub28quqlkr99vicau41&c_key=11110EE%20%20323000" target="_blank">EE 323000</a></td>
+              <td class="text-left col-md-4">Introduction to Integrated Circuit Design</td>
+              <td class="text-center">A-</td>
+              <td class="text-center">CHANG, MENG-FAN</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=et1m1n5ub28quqlkr99vicau41&c_key=11110EE%20%20323500" target="_blank">EE 323500</a></td>
+              <td class="text-left col-md-4">Analog Integrated Circuits Analysis and Design I</td>
+              <td class="text-center">A</td>
+              <td class="text-center">TANG KEA TIONG</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=et1m1n5ub28quqlkr99vicau41&c_key=11110EE%20%20335000" target="_blank">EE 335000</a></td>
+              <td class="text-left col-md-4">Introduction to Solid-State Electronic Devices</td>
+              <td class="text-center">A-</td>
+              <td class="text-center">KING, YA-CHIN</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=et1m1n5ub28quqlkr99vicau41&c_key=11110EE%20%20351000" target="_blank">EE 351000</a></td>
+              <td class="text-left col-md-4">Feedback Control Systems</td>
+              <td class="text-center">A</td>
+              <td class="text-center">CHIU, WEI-YU</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Summer 2022 (UCLA)</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://catalog.registrar.ucla.edu/course/2023/ecengr3" target="_blank">EC ENGR 3</a></td>
+              <td class="text-left col-md-4">Introduction to Electrical Engineering</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Mike Briggs</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Spring 2022</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=3sak7io6s2dlo4nn13ajb5huk1&c_key=11020EE%20%20225501" target="_blank">EE 225501</a></td>
+              <td class="text-left col-md-4">Electronics</td>
+              <td class="text-center">A</td>
+              <td class="text-center">KING, YA-CHIN</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=fjspqb0j05mkg4d5i5nb8dhlj7&c_key=11020EECS202001" target="_blank">EECS202001</a></td>
+              <td class="text-left col-md-4">Signals and Systems</td>
+              <td class="text-center">B+</td>
+              <td class="text-center">HUANG, CHEN-BIN</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Fall 2021</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=lminis8ukbpjuhcgriihrj70v0&c_key=11010EECS203001" target="_blank">EECS203001</a></td>
+              <td class="text-left col-md-4">Ordinary Differential Equations</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">CHU, TA-SHUN</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center"><a href="https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/JH/common/Syllabus/1.php?ACIXSTORE=lminis8ukbpjuhcgriihrj70v0&c_key=11010EECS205004" target="_blank">EECS205004</a></td>
+              <td class="text-left col-md-4">Linear Algebra</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">LEE, RAY-KUANG</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="custom-table" style="width:100%;">
+          <thead style="background-color: rgba(224, 171, 193, 0.3)">
+            <tr class="text-center">
+              <th class="col-md-2 center">NTUST Abbreviation</th>
+              <th class="col-md-5 center">Topics</th>
+              <th class="col-md-1 center">Grade</th>
+              <th class="col-md-2 center">Professor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Spring 2021</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">ET3305303</td>
+              <td class="text-left col-md-4">Digital Logic Design</td>
+              <td class="text-center">A</td>
+              <td class="text-center">Chang Hong Lin</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">ET3305303</td>
+              <td class="text-left col-md-4">Digital Logic Design Laboratory                SDSDSSDDSDDDDDDDDDDDFSDF</td>
+              <td class="text-center">A</td>
+              <td class="text-center">Chang Hong Lin</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">ET161B002</td>
+              <td class="text-left col-md-4">Calculus (II)</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Jenq-Shiou Leu</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">EC163B006</td>
+              <td class="text-left col-md-4">General Physics B (II)</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Chih-Chien Lee</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">ET173B002</td>
+              <td class="text-left col-md-4">General Physics Laboratory (II)</td>
+              <td class="text-center">A</td>
+              <td class="text-center">Hsiang Wang</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr style="background-color: rgba(119, 153, 212, 0.3)">
+              <th colspan="4" class="text-center">Fall 2020</th>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">ET3405303</td>
+              <td class="text-left col-md-4">Introduction to Programming</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Yung-Yao Chen</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">ET161A002</td>
+              <td class="text-left col-md-4">Calculus (I)</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Jenq-Shiou Leu</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">EC163A006</td>
+              <td class="text-left col-md-4">General Physics B (I)</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Chih-Chien Lee</td>
+            </tr>
+            <tr style="background-color: rgba(215, 189, 240, 0.05)">
+              <td class="text-center">ET173A002</td>
+              <td class="text-left col-md-4">General Physics Laboratory (I)</td>
+              <td class="text-center">A+</td>
+              <td class="text-center">Hsiang Wang</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br> <br> <br>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("classFiltering");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  function displayFiltered() {
+    x = document.getElementsByClassName("classFiltering");
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+    }
+
+    let categories = ['all', 'tech', 'ana', 'dig', 'cs', 'sld', 'mech', 'math', 'phy'];
+    var activeCategories = []
+
+    categories.forEach(function(item, index, array) {
+      elem = document.getElementById(item);
+      if (elem.className.indexOf("active") > -1) activeCategories.push(elem.id)
+    });
+
+    x = document.getElementsByClassName("classFiltering");
+    for (i = 0; i < x.length; i++) {
+      var show = true;
+      activeCategories.forEach(function(item, index, array) {
+        if (x[i].className.indexOf(item) <= -1) show = false;
+      })
+      if (show && activeCategories.length > 0) w3AddClass(x[i], "show");
+    }
+  }
+
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("classButtons");
+  var btns = btnContainer.getElementsByClassName("classBtn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      if (this.className === "classBtn active") {
+        this.className = "classBtn";
+      }
+      else {
+        this.className = "classBtn active";
+      }
+      displayFiltered();
+    });
+  }
+</script>
+

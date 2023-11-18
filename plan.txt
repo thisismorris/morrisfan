@@ -1,0 +1,20 @@
+home page: bio, current position/classes, interests. (done)
+research
+	- mri circuit stuff
+	- currently <salahuddin>
+internships/work
+	- atx: all
+	- mumec: brief summary
+teaching
+	- 16a (website scripting, roles/responsibilities, book/content dev like notebooks)
+	- 16b (software and content dev (lcapy))
+projects
+	- eecs 16b (robot car), ee 118 (optimized cooke triplet design), ee 130 (design report), ee 105 (bjt and mos simulated amplifier designs)
+	- cs61b (world gen), cs61c (cpu design logisim, neural net risc-v), cs162 (file system/user programs, scheduling)
+classes
+	- transcript layout with filtering? (done)
+	- description of classes and major topics/skills i each (done)
+about me
+	- interest (done)
+	- seeking internship 2021 hardware (done)
+	- hobbies
