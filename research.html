@@ -50,61 +50,36 @@
 		<div class="content">
 			<div class="content-table flex-column">
 				<div class="flex-item flex-column">
-					<h2 class="add-top-margin">LEED Lab (Fa20 - Su22)</h2>
+					<h2 class="add-top-margin">BAG3 Generator for Analog Design Assistance</h2>
 					<a class="anchor" id="leed"></a>
 					<hr>
 					<p class="text">
-						In August 2020, I started device design research under <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/salahuddin.html" target="_blank">Professor Sayeef Salahuddin</a> in the <a href="https://leed.eecs.berkeley.edu/" target="_blank"> LEED Center </a> (Lab for Emerging and Exploratory Devices) working on embedded memory devices, using TCAD (Sentaurus Workbench).
-					</p>
-					<p class="text">
-						Our work was accepted for publication in the IEEE Journal for Transactions on Electron Devices! It will appear in the next available issue of T-ED, and a summary of the work will be given here soon.
+						<li> October 2023 - Present | Berkeley, CA </li>
+						<li> Undergraduate Research led by Prof. Borivoje Nikolic, SLICE Lab, EECS, UC Berkeley </li>
+						<li> Developed expertise in BAG flow and design a generator for layout processing and circuit optimization. </li>
+						<li> Construct the generator with open source Skywater 130nm environment. </li>
 					</p>
 				</div>
 				<div class="flex-item flex-column">
-					<h2 class="add-top-margin">Inclusive Study Group Formation (Fa20 - Sp22)</h2>
+					<h2 class="add-top-margin">Dual Port SRAM22 PCB Layout Design</h2>
 					<a class="anchor" id="studygroups"></a>
 					<hr>
 					<p class="text">
-						In August 2020, as part of my TA responsbilities, I began working with a team to develop a scalable infrastructure to rapidly form study groups for students that encouraged inclusivity. This has been successfully deployed in 6 classes for numerous semesters since then, including some of the largest introductory classes at UC Berkeley such as EECS 16AB and CS 61AB.
+						<li> September 2023 - Present | Berkeley, CA </li>
+						<li> Undergraduate Research led by Prof. Borivoje Nikolic, SLICE Lab, EECS, UC Berkeley </li>
+						<li> Designed PCB Layout for PhD student Rahul’s SRAM22 chip to do measurements and verifications within two weeks. </li>
+						<li> Constructed Layout using Altium Designer and gained PCB taped-out experience, writing testplan and PartSync. </li>
 					</p>
 				</div>
 				<div class="flex-item flex-column">
-					<h2 class="add-top-margin">SWARM Lab (Sp19-Fa19)</h2>
+					<h2 class="add-top-margin">IoT Sensor Interface Circuit Chip Design</h2>
 					<a class="anchor" id="swarm"></a>
 					<hr>
 					<p class="text">
-						<u>Overview:</u> In Spring 2019, I joined the <a href="https://swarmlab.berkeley.edu/home">SWARM Lab</a> where I helped develop a portable, low-cost, functional MRI machine that only uses the Earth's magnetic field, but still has sufficient image quality to use outside hospitals. I worked on custom hardware design, testing, and validation for a prototype with graduate student <a href="https://people.eecs.berkeley.edu/~vhan/">Victor Han</a> under <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/chunleiliu.html">Professor Chunlei Liu</a>. A summary of my work and motivation is below.
-					</p>
-					<p class="text">
-						<img class="image image-wrap-text max-width-400" src="img/mri-setup.jpg" style="width:400px;margin-left:0px;margin-right:20px;margin-top:10px;margin-bottom:10px;">
-						<u>Motivation / Design:</u> Commercial magnetic resonance machines are notorious for their large size and noisy operation. Much of their inconvenience is related to the permanent magnets in the system. Furthermore, superconducting systems require careful temperature regulation. We therefore proposed a portable, convenient alternative that uses the Earth's magnetic field to obtain a usable signal for MRI. Prior attempts relied on pre-polarization to temporarily improve the strength and homogeneity of the Earth's field before scans. We worked on a unique design which doesn't require pre-polarization, improving upon existing concepts by implementing signal amplifiers with circuitry. We use an aluminum shell to block RF noise and digitally filter power line noise. Our circuitry is placed on the shielding and copper tape forms a reliable ground. The function generator here shows that the noise is small, as the signal isn't saturating despite our circuit's gain of 500,000.
-					</p>
-					<p class="text">
-						<u>Custom Circuit Design:</u> We sought to address an area where scanning could be improved involving the transmit and receive of signals from the MRI scanner. The simple mechanism is to transmit, receive, and repeat. However, designing circuitry to enable simultaneous transmit-and-receive would allow much greater hardware efficiency and reduced scanning times. So, we built custom-circuitry to send and receive signals over different frequencies, with TR switches to toggle the signals. We used an Analog Discovery 2.0 and python scripting to process the signals. The circuit consisted of various tuned analog filters. We then designed and tested a PCB leading to additional adjusting for impedance matching.
-					</p>
-					<p class="text">
-						<u>Hardware Validation:</u> I also helped collect data to validate our custom-designed Earth's field MRI scanner against a commercial scanner (Terranova). We found that the magnetic fields in the lab were unpredictable even on an hour-to-hour basis, so the process of data collection was tedious. We used a simple phone app to find areas of high magnetic field strength, and conducted "spin echo" experiments to confirm the scanner's function. The scanner itself only contained small water bottles, not a tissue sample, but the polarized water molecules were enough for signal detection. We achieved equal performance between the custom hardware and the commercial scanner, all with reduced weight, much more compact size, and greater mobility.
-					</p>
-					<div class="row">
-						<div class="column">
-              <img class="image max-width-400" src="img/commercial-scanner-data.png" style="height:280px;">
-              <p class="image-caption">The commercial scanner's spin-echo data.</p>
-            </div>
-            <div class="column">
-              <img class="image max-width-400" src="img/custom-scanner-data.png" style="height:280px;">
-              <p class="image-caption">Our custom circuit's collected spin-echo data.</p>
-            </div>
-          </div>
-				</div>
-				<div class="flex-item flex-column">
-					<h2 class="add-top-margin">Conboy Lab (Su16-Fa17, Fa18)</h2>
-					<a class="anchor" id="bioeng-conboy"></a>
-					<hr>
-					<p class="text">
-						In this lab, I carried out cell-based biochemistry experiments and learned a variety of techniques in cell culture, immunostaining, and computational biology. In 2017, my project (<i>Investigating the Effects of Human Serum Albumin and Mouse Serum on Proliferation of Neural Precursor Cells</i>) aimed to determine how brain stem cells (neural precursor cells) reacted to the age of the blood they were surrounded by. How well do they grow and reproduce, and to what extent does their celular environment play a role? In 2016 (<i>Determining the Effect of the Age of the Environment on the Incidence of Cellular Senescence </i>), my primary goal was to understand how well the expression of a protein marker called p16 acted as an indicator of cellular senescence (akin to hibernation).
-					</p>
-					<p class="text">
-					 The report I submitted for the Siemens Science Competition and Regeneron STS in 2017 are attached <a href="project_materials/SiemensReport2017.pdf" target="_blank">here</a>, with an executive summary <a href="project_materials/SiemensExecutiveSummary2017.pdf" target="_blank">here</a>. My report for Siemens 2016 is <a href="project_materials/SiemensFinalReport2016.pdf" target="_blank">here</a>.
+						<li> February 2023 - December 2023 | Hsinchu, Taiwan </li>
+						<li> Capstone project led by Prof. Kea-Tiong (Samuel) Tang, EE, NTHU </li>
+						<li> Developed expertise in design low-noise, high-bandwidth ADC Circuit for E-nose and reduce power costs by 10%. </li>
+						<li> Taped-out with 180nm fabrication at TSRI, gained hands-on experience in the full IC design routine. </li>
 					</p>
 				</div>
 				<br> <br> <br>
