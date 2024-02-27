@@ -39,7 +39,7 @@ Charge and discharge caps, delay
 
 - Asynchronous design is not ideal
 
-- The absolute, time reference, clock synchronizes Clk to ensure function completion and order execution steps to achieve that once the signal passes clk, the signal is stable. Clk can’t be too fast, **o.w. Clk edges subject to delay (skew) and noise (jitter)**
+- The absolute, time reference, clock synchronizes Clk to ensure function completion and order execution steps to achieve that once the signal passes clk, the signal is stable. Clk can’t be too fast, **o.w. Clk edges are subject to delay (skew) and noise (jitter)**
 
 - Provide timing margins to offset worst-case scenarios
 
@@ -122,64 +122,209 @@ How can we interface with technology?
 - Electrode is the electrical interface between tissue and electronics.
 
 **Problem 2: Electrode DC Offset (EDO)**
-how you design your amplifier
-Half-cell potential, might be positive or negative depends on material
+- How do you design your amplifier?
 
-Electrode impedance magnitude decreases as frequency gets higher.
-Small VEDO = low Zin @DC, for AC is not that straight forward
+    - Half-cell potential might be positive or negative depending on the material
 
-Vin = vbio + VEDO, EDO should not be amplifier.
+    - Electrode impedance magnitude decreases as the frequency gets higher
 
-How to remove EDO? High pass filter, reject fc < 1Hz
+- Achieving a high impedance in AC
+    - Small $V_{EDO}$ = low Zin @DC, for AC, is not that straightforward
 
-Make zin > 10*Zele to reduce noise.
+    - Vin = vbio + VEDO, EDO should not be an amplifier.
 
-How to achieve high input impedance? 
+- How to remove EDO? 
+    - High pass filter, reject fc < 1Hz
 
-Spec of bio-amp:
-Low noise
-Can reject EDO
-High input impedance
+    - Make zin > 10*Zele to reduce noise.
 
-Application spec requirement:
-Small area
-Low power
-Good linearity
-Low input leakage (BJT have input current which is deserted)
+**Biopotential Amplifier General Metrics (Spec of bio-amp)**
+- Low noise
+- Can reject EDO
+- High input impedance
+- Application spec requirement:
+    - Small area
+    - Low power
+    - Good linearity
+    - Low input leakage (BJT has input current which is deserted)
 
-Complete biopotential readout
-Recording electrode => low-noise amp (the one wants to optimized) + =>filter => programmable gain amplifier => ADC (determine signal quality, how many bits/levels required)(but not over designing, expensive, enough is enough, more bits => more power needs to compute)
-Reference electrode => amp - => 
+**Complete biopotential readout**
+1. Recording electrode
+2. low-noise amp (the one that wants to be optimized) + 
+3. filter
+4. programmable gain amplifier
+5. ADC (determine signal quality, how many bits/levels required)(but not over-designed, expensive, enough is enough, more bits
+6. more power needs to compute)
 
-Pseudo-resistors
-Diode-connected MOS biased in cut-off
-The equivalent resistance values > 100G ohms
-Small area, but non-linear
+**LNA**
+- Negative Feedback loop diff amp
+    - Pseudo-resistors
+        -Diode-connected MOS biased in cut-off
+        -The equivalent resistance values > 100G ohms
+        -Small area
+        -non-linear
+        -temperature dependent
 
-Differential amplifier:
-Upper PMOS (Mpi) dominate the noise
-To achieve low-noise, large gm in Mpi and small gm in Mnb (lower MOS in the right bottom)
 
-Multi channel readout can enable high-density sensing
+**Differential amplifier**
+Upper PMOS (Mpi) dominates the noise
+To achieve low noise
+- large gm in Mpi for PMOS input pairs
+- small gm in Mnb for NMOS active loads (lower MOS in the right bottom)
 
-Neural readout ASIC: study brain behavior (SoC)
+**Multi-channel readout**
 
-Summary:
+Multi-channel readout can enable high-density sensing
+
+**Neural readout ASIC**
+- Neuro-probe
+    - Brain behaviors (SoC)
+    - Time-division multiplexing
+
+- Needles
+
+**Summary**
 Biopotential are small (uV-mV) and low-frequency (<10kHz) signals
 
-===QA===
-Neural link claimed they have implanted a ‘brain-reading’ device into a person. allowing a person with severe paralysis to control a computer, robotic arm, wheelchair or other device through thought alone. What do you think of the future of putting chips to normal human beings or it should stick with medical usage.
+> Q: Neural link claimed they have implanted a ‘brain-reading’ device into a person. allowing a person with severe paralysis to control a computer, robotic arm, wheelchair or other device through thought alone. What do you think of the future of putting chips to normal human beings or it should stick with medical usage.
+> R: Yes, it might happened, this is not the first approach people claims to put chips into human brains. it is high risks procedures, some day it might be in customer electric such as gaming and daily lives.
 
-Yes, it might happened, this is not the first approach people claims to put chips into human brains. it is high risks procedures, some day it might be in customer electric such as gaming and daily lives.
+> Q: Battery and power
+> R: Power supplies, when to charge the device and how often should you charge the device. Noise cancellation to decrease power consumption
 
-Power supplies, when to charge the device and how often should you charge the device. Noise cancellation to decrease power consumption
-
-
+## Lunch Networking
 
 ## The Basic of Ratio Frequency (RF) Circuits
 *Prof. Hossein Hashemi, University of Southern California, USA*
+
+In the air, EM waves travels with the speed of light. Propagation speed is lower in other medium = distance/speed
+
+The electric and magnetic fields vary with time as sinusoids. The propagating wave is periodic in space as well. Wavelength is the spacial of the EM wave.
+Wavelength = speed/frequency. RF refer to wavelength btw 10^5~10^-4, if the wavelength is long enough, it is available to see behind the wall. 
+
+Modulation is the process of extracting the information signal on from a modulated carrier signal.
+
+Radio frequency transmitter modulator
+Radio frequency receiver demodulator
+
+I(t)cos(wt) + Q(t)sin(wt) = a(t)cos(wt+theta(t))
+
+Modern radio frequency receiver
+Signal => bandpass filter => ......
+
+Average power consumption of resistors = V^2/2R
+For caps (current is the derivative of voltage): sometimes it gives power, sometimes store power. 
+
+Parasitic caps creates a low-impedance path at high frequency. (Vout becomes zero at high frequency). In order to create bandpass filter, we want resonate, so we add additional inductor parallel to caps.
+
+The hardest part is power amplifier to transmit the signal over a longer distance
+
+The problem is that if the device consume large power, it reqire high voltage too. But circuits now consume voltage less than 1V. and the antenna resistance is fixed.
+Instead, we use transformers (2 inductors)
+
+Impedance transformer: CM connected to (LM to gnd). Conmines “emuter”
+
+Oscillator:
+During LC resonate, no energy is lost.
+T = 2*pi*(LC)^0.5
+
+RF Mixers
+An LTI system cannot multiply two signals
+
+Switching mixer (Vcontrol > 0 = on)
+
+Any periodic waveform can be represented using Fourier series
+Vout = p(t) * v(t)
+By Fourier series, we get desired signal but also a bunch of unwanted signals, but we got bandpass filter.
+
+Summary:
+Modern RF circuits use analog and digital techniques.
+Important concepts related to RF circuits: noise, linearity……
+RFIC designer are in high demand
+
+> Q: When the frequency is low enough, we can easily generate sine and cosine. But for higher frequency it is not energy efficient.
+> R: Information separated to I and Q, multiply with oscillator(carrier wc) in between and add(using KCL) them together. 
+
+> Q: Driving force between RF industry? pushing frequency higher to get different part of wavelength. Inductors and caps for resonate are large, occupied lots of area. Can we replace inductor?
+
+Tunnel creation: focus the beam like laser, spacial diversity
+
+Technics to reduce parasitic caps, literally minimize length and width of wires, make circuit compact or 4 RF circuit, resonate cancelled out. make Transmission line
+
+> Q: Negative caps? 
+> R: Noise linearity issue
 
 
 
 ## The Basic of Silicon-Photonic Circuits
 *Prof. Sudip Shehkar, University of British Columbia, Canada*
+
+Improve performance: speed, latency, parallelism //CMOS
+Transceiver: transmitter and receiver
+
+Miniaturize discrete or bulky components //RF-CMOS
+
+CMOS SOI(Silicon on Insulator)
+
+Enable new application: Silicon photonics CMOS SOI
+
+CMOS strengths and weaknesses
+Great:
+High gain, switching, generating clk frequency up to 100s of GHz
+Realizing complex functions with billions of transistors on a single chip
+
+Limitation:
+Having limitations driving high-speed data from on chip to another over long distance, due to cu loss, interacting(sensing, detecting) with different particles and waves.
+
+Silicon photonics: //new tech, promising
+Complement some challenges ex. Increase speed, reduce latency, reduce power.
+Usage in data center, cloud
+
+Shrink the LIDAR on a small chip to lower the cost.
+
+Data centers are connected with optical fiber
+
+Frequency-dependent loss in Cu channel create inter-system interferences (ISI)
+Loss increase at high rates and loss increase with length of interconnect => Equalizer helps. But consumes power
+
+Get rid off fiber, instead, using optical fiber for cable (less attenuated), and change the source to laser (tera Hz), couple the laser into photonic chip => silicon photonic
+Optical switch (modulator) to block the laser driven by electronic. (amplitude modulation)
+
+Fiber sending different length, different light, less interrupt with each other
+Support multiple data streams, each on a separated wavelength, on the same waveguide of fiver (WDM)
+
+Electro-optical link: since now we are talking about tera hertz, the wavelength is extremely small, so we need electronic control.
+
+Y-branch splitter: 50/50 intensity splitter with output ports identical in phase
+
+Photodetector/photodiodes (PDs)
+Produce current from current phonons
+
+Passives: 
+Mach-zehnder interferometer (MZI) //split then add up
+I0 = (Iin/2)*(1+cos(theta)), so we control the modulator by different phase shift
+By adding different voltage, we get different phase shift, and we get the current
+
+N is a measure of reduction of velocity of light in a medium vs vacuum, v=c/n
+Change n to change velocity, l=v*t=c*t/n
+
+Thermal phase shifter (TPS): add a metal resistor near the Si waveguide, heating up when a current flow through it.
+
+High-speed phase shifter
+Dope the Si rib waveguide to make a p-n junction
+
+Diode also have parasitics caps, so we use transmission line to lower caps or cancel out with inductors
+
+Put both electronics and photons in Si-process: cointegrated and ……
+
+Biosensors: sensing refractive index, ring resonator (bandpass filter). We can drop blood on this ring to detect covid viruses, and we can scale it into other covid alpha, beta……
+
+===QA===
+Send info with time as reference => synchronize
+
+Pulse amplitude modulation
+
+Noise consideration about PN junction modulator? 
+
+Do I need to worried about refraction? Not a problem for the high speed circuit. 
+Whats the case we want refraction? Surface grating coupling, use it to combine lights. 
