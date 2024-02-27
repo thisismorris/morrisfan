@@ -26,7 +26,7 @@ Charge and discharge caps, delay
 
 - Switching (dynamic consumption) = $\text{C}_{2} * V^2 * f$
 
-- Static consumption = $\frac{V^2}{{R}_{off}}$
+- Static consumption = $\frac{V^2}{R_{off}}$
 
 **Modularity and hierarchy:**
 
