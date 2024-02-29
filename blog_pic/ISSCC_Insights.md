@@ -197,14 +197,14 @@ Biopotential are small (uV-mV) and low-frequency (<10kHz) signals
 ## The Basic of Ratio Frequency (RF) Circuits
 *Prof. Hossein Hashemi, University of Southern California, USA*
 
-In the air, EM waves travels with the speed of light. Propagation speed is lower in other medium = distance/speed
+In the air, EM waves travel at the speed of light. Propagation speed is lower in another medium = distance/speed
 
-The electric and magnetic fields vary with time as sinusoids. The propagating wave is periodic in space as well. Wavelength is the spacial of the EM wave.
-Wavelength = speed/frequency. RF refer to wavelength btw 10^5~10^-4, if the wavelength is long enough, it is available to see behind the wall. 
+The electric and magnetic fields vary with time as sinusoids. The propagating wave is periodic in space as well. Wavelength is the special of the EM wave.
+Wavelength = speed/frequency. RF refers to wavelength btw 10^5~10^-4, if the wavelength is long enough, it is available to see behind the wall. 
 
-Modulation is the process of extracting the information signal on from a modulated carrier signal.
+Modulation is the process of extracting the information signal from a modulated carrier signal.
 
-Radio frequency transmitter modulator
+Radiofrequency transmitter modulator
 Radio frequency receiver demodulator
 
 I(t)cos(wt) + Q(t)sin(wt) = a(t)cos(wt+theta(t))
@@ -213,16 +213,16 @@ Modern radio frequency receiver
 Signal => bandpass filter => ......
 
 Average power consumption of resistors = V^2/2R
-For caps (current is the derivative of voltage): sometimes it gives power, sometimes store power. 
+For caps (current is the derivative of voltage): sometimes it gives power, sometimes stores power.
 
-Parasitic caps creates a low-impedance path at high frequency. (Vout becomes zero at high frequency). In order to create bandpass filter, we want resonate, so we add additional inductor parallel to caps.
+Parasitic caps create a low-impedance path at high frequency. (Vout becomes zero at high frequency). In order to create a bandpass filter, we want to resonate, so we add an inductor parallel to the caps.
 
 The hardest part is power amplifier to transmit the signal over a longer distance
 
-The problem is that if the device consume large power, it reqire high voltage too. But circuits now consume voltage less than 1V. and the antenna resistance is fixed.
+The problem is that if the device consumes large power, it requires high voltage too. But circuits now consume voltage less than 1V. and the antenna resistance is fixed.
 Instead, we use transformers (2 inductors)
 
-Impedance transformer: CM connected to (LM to gnd). Conmines “emuter”
+Impedance transformer: CM connected to (LM to gnd). Comments “emoter”
 
 Oscillator:
 During LC resonate, no energy is lost.
