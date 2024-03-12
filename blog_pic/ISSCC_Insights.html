@@ -1,0 +1,384 @@
+<!DOCTYPE html><html><head>
+      <title>ISSCC_Insights</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/MORRIS/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.11/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="isscc-circuit-insights-feb-17th-2024">ISSCC Circuit Insights, Feb 17th, 2024 </h1>
+<p><em><strong>Written by Morris Fan</strong></em></p>
+<h2 id="fundamentals-of-digital-circuit-design">Fundamentals of Digital Circuit Design </h2>
+<p><em>Prof. Jan M. Rabaey, University of California, Berkeley USA</em></p>
+<p><strong>Compute, Communicate, Acquire/Act</strong></p>
+<p>In digital design and computing, we focused on complexity at low cost.</p>
+<p>From the lower level to the top: Boolean (0 and 1), logic gate control, processor, and memories to software.</p>
+<p>We use VOLTAGE representation for signals (current, flux can also but no). Voltage signals are not ideal since it is affected by the environment, couple, and noises. We define threshold range.</p>
+<p><strong>Regeneration:</strong> no accumulation of noise in complex circuits.</p>
+<ul>
+<li>In contrast to analog circuits. Which allows you to stack up circuits.</li>
+</ul>
+<p>In the digital world, we view transistors as switches. However, it is not ideal and determines speed (performance) and energy consumption, caused by parasitic caps and resistance (Cs, Cd, Ron, Roff).</p>
+<p>Charge and discharge caps, delay</p>
+<p><strong>Energy and power:</strong></p>
+<ul>
+<li>
+<p>Switching (dynamic consumption) = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>C</mtext><mn>2</mn></msub><mo>∗</mo><msup><mi>V</mi><mn>2</mn></msup><mo>∗</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\text{C}_{2} * V^2 * f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord text"><span class="mord">C</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span></p>
+</li>
+<li>
+<p>Static consumption = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>V</mi><mn>2</mn></msup><msub><mi>R</mi><mrow><mi>o</mi><mi>f</mi><mi>f</mi></mrow></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{V^2}{R_{off}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.566em;vertical-align:-0.5481em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0179em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3488em;margin-left:-0.0077em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">ff</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2901em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.931em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5481em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+</li>
+</ul>
+<p><strong>Modularity and hierarchy:</strong></p>
+<ul>
+<li>Combine Easy composability to get a modular design approach.</li>
+<li>Delay = D1+D2</li>
+<li>Hierarchy to handling complexity</li>
+<li>F = (F1, F2) functions</li>
+</ul>
+<p><strong>Timing and Sequential Circuits:</strong></p>
+<ul>
+<li>
+<p>Asynchronous design is not ideal</p>
+</li>
+<li>
+<p>The absolute, time reference, clock synchronizes Clk to ensure function completion and order execution steps to achieve that once the signal passes clk, the signal is stable. Clk can’t be too fast, <strong>o.w. Clk edges are subject to delay (skew) and noise (jitter)</strong></p>
+</li>
+<li>
+<p>Provide timing margins to offset worst-case scenarios</p>
+</li>
+<li>
+<p>Optimize clk distribution network</p>
+</li>
+</ul>
+<p><strong>Verification:</strong></p>
+<ul>
+<li>Functionality</li>
+<li>Signal noise margins</li>
+<li>Timing margins</li>
+<li>Optimize and repetition</li>
+</ul>
+<p><strong>Jitter impact:</strong> 2 wires too close to each other (coupling caps btw the wires), bad clk, minimize the variance, solve by adding buffers.</p>
+<blockquote>
+<p>Q: Asynchronous clk is not useful since it didn’t have great EDA, is it worth developed?<br>
+R: Only triggered when the signal is changing, so the time variance is large, and we are doing worst case circuits, so it’s hard to design timing margin.</p>
+</blockquote>
+<ul>
+<li>SPICE doesn’t scale in billions of transistors.</li>
+</ul>
+<p><strong>Design methodology:</strong></p>
+<ul>
+<li>Verification and design automation (freedom from component choice)</li>
+<li>To make a reliable circuit, <strong>Always Stick to the design rules</strong>.</li>
+</ul>
+<p>Design productivity: transistor-level =&gt; gate level =&gt; register transfer level (RTL) =&gt; reuse =&gt; AI design tools? =&gt; AI designing computers? <strong>(What’s the rule and the role of the designer?)</strong></p>
+<p><strong>Verilog:</strong></p>
+<ul>
+<li>Structure: HOW</li>
+<li>Behavior: WHAT</li>
+</ul>
+<p><strong>Reuse the block</strong><br>
+Raising the bar, start using Python, java, tensor flow =&gt; the generator (ex. RISC-V)</p>
+<p>As we are approaching the physical limitation. The ingenuity of humans and the ingenuity of nature, are there any natural models (different aspects)?</p>
+<blockquote>
+<p>Q: Why don’t we redesign the gate levels to increase the performance? Since you also need to redesign the verifications. choose the now that WINS. Will AI do the verification faster?<br>
+R: Cost time and efforts.</p>
+</blockquote>
+<blockquote>
+<p>Q: Any other physical materials other than silicon to push regeneration. Quantum? Neural?<br>
+R: Sometimes you are not able to consider worst case scenario, like Gaussian distribution? Put circuits for detection, error correction to assist design.</p>
+</blockquote>
+<blockquote>
+<p>Q: Ideas on Moore’s law?<br>
+R: Increase density, CFet (PMOS over NMOS).</p>
+</blockquote>
+<h2 id="cmos-circuit-for-biomedical-applications">CMOS Circuit for Biomedical Applications </h2>
+<p><em>Prof. Carolina Mora Lopez, IMEC, Leuven, Belgium</em></p>
+<p><strong>The complexity of the human brain v.s. technology.</strong><br>
+Aiming to manage disease, ease pain……</p>
+<p>How can we interface with technology?</p>
+<ul>
+<li>Sense: getting information from bio-electric signals</li>
+<li>Actuate: Drive a certain organ</li>
+</ul>
+<p><strong>Problem 1: Electrical noise</strong></p>
+<ul>
+<li>
+<p>Thermal noise</p>
+<ul>
+<li>a.k.a. white noise (noise for static resistance generated by the random thermal motion of charge carriers)</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>n</mi></msub><mo stretchy="false">(</mo><mi>R</mi><mi>M</mi><mi>S</mi><mo stretchy="false">)</mo><mo>=</mo><msqrt><mrow><mn>4</mn><mi>K</mi><mi>T</mi><mi>R</mi><mi>B</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">V_n(RMS) = \sqrt{4KTRB}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">RMS</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.1133em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9267em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">4</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord mathnormal" style="margin-right:0.05017em;">TRB</span></span></span><span style="top:-2.8867em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1133em;"><span></span></span></span></span></span></span></span></span></li>
+</ul>
+</li>
+<li>
+<p>Flicker noise</p>
+<ul>
+<li>a.k.a. white noise (1/f noise) in transistors is caused by imperfections in the crystalline structure of semiconductors</li>
+</ul>
+</li>
+<li>
+<p>Noise spectrum</p>
+<ul>
+<li>avg noise power at each frequency</li>
+</ul>
+</li>
+<li>
+<p>Corner frequency</p>
+<ul>
+<li>where two noises coincide</li>
+<li>Biopotential signals are low-frequency signals</li>
+<li>Must minimize Both noises</li>
+</ul>
+</li>
+<li>
+<p>Design Trade-offs</p>
+<ul>
+<li>area v.s. noise and power v.s. noise</li>
+</ul>
+</li>
+</ul>
+<h4 id="interface-with-biology">Interface with Biology </h4>
+<ul>
+<li>
+<p>Cell, electro-chemical reactions</p>
+</li>
+<li>
+<p>Electrode is the electrical interface between tissue and electronics.</p>
+</li>
+</ul>
+<p><strong>Problem 2: Electrode DC Offset (EDO)</strong></p>
+<ul>
+<li>
+<p>How do you design your amplifier?</p>
+<ul>
+<li>
+<p>Half-cell potential might be positive or negative depending on the material</p>
+</li>
+<li>
+<p>Electrode impedance magnitude decreases as the frequency gets higher</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Achieving a high impedance in AC</p>
+<ul>
+<li>
+<p>Small <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>E</mi><mi>D</mi><mi>O</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{EDO}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">E</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">D</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">O</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = low Zin @DC, for AC, is not that straightforward</p>
+</li>
+<li>
+<p>Vin = vbio + VEDO, EDO should not be an amplifier.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>How to remove EDO?</p>
+<ul>
+<li>
+<p>High pass filter, reject fc &lt; 1Hz</p>
+</li>
+<li>
+<p>Make zin &gt; 10*Zele to reduce noise.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Biopotential Amplifier General Metrics (Spec of bio-amp)</strong></p>
+<ul>
+<li>Low noise</li>
+<li>Can reject EDO</li>
+<li>High input impedance</li>
+<li>Application spec requirement:
+<ul>
+<li>Small area</li>
+<li>Low power</li>
+<li>Good linearity</li>
+<li>Low input leakage (BJT has input current which is deserted)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Complete biopotential readout</strong></p>
+<ol>
+<li>Recording electrode</li>
+<li>low-noise amp (the one that wants to be optimized) +</li>
+<li>filter</li>
+<li>programmable gain amplifier</li>
+<li>ADC (determine signal quality, how many bits/levels required)(but not over-designed, expensive, enough is enough, more bits</li>
+<li>more power needs to compute)</li>
+</ol>
+<p><strong>LNA</strong></p>
+<ul>
+<li>Negative Feedback loop diff amp
+<ul>
+<li>Pseudo-resistors<br>
+-Diode-connected MOS biased in cut-off<br>
+-The equivalent resistance values &gt; 100G ohms<br>
+-Small area<br>
+-non-linear<br>
+-temperature dependent</li>
+</ul>
+</li>
+</ul>
+<p><strong>Differential amplifier</strong><br>
+Upper PMOS (Mpi) dominates the noise<br>
+To achieve low noise</p>
+<ul>
+<li>large gm in Mpi for PMOS input pairs</li>
+<li>small gm in Mnb for NMOS active loads (lower MOS in the right bottom)</li>
+</ul>
+<p><strong>Multi-channel readout</strong></p>
+<p>Multi-channel readout can enable high-density sensing</p>
+<p><strong>Neural readout ASIC</strong></p>
+<ul>
+<li>
+<p>Neuro-probe</p>
+<ul>
+<li>Brain behaviors (SoC)</li>
+<li>Time-division multiplexing</li>
+</ul>
+</li>
+<li>
+<p>Needles</p>
+</li>
+</ul>
+<p><strong>Summary</strong><br>
+Biopotential are small (uV-mV) and low-frequency (&lt;10kHz) signals</p>
+<blockquote>
+<p>Q: Neural link claimed they have implanted a ‘brain-reading’ device into a person. allowing a person with severe paralysis to control a computer, robotic arm, wheelchair or other device through thought alone. What do you think of the future of putting chips to normal human beings or it should stick with medical usage.<br>
+R: Yes, it might happened, this is not the first approach people claims to put chips into human brains. it is high risks procedures, some day it might be in customer electric such as gaming and daily lives.</p>
+</blockquote>
+<blockquote>
+<p>Q: Battery and power<br>
+R: Power supplies, when to charge the device and how often should you charge the device. Noise cancellation to decrease power consumption</p>
+</blockquote>
+<h2 id="lunch-networking">Lunch Networking </h2>
+<h2 id="the-basic-of-ratio-frequency-rf-circuits">The Basic of Ratio Frequency (RF) Circuits </h2>
+<p><em>Prof. Hossein Hashemi, University of Southern California, USA</em></p>
+<p>In the air, EM waves travel at the speed of light. Propagation speed is lower in another medium = distance/speed</p>
+<p>The electric and magnetic fields vary with time as sinusoids. The propagating wave is periodic in space as well. Wavelength is the special of the EM wave.<br>
+Wavelength = speed/frequency. RF refers to wavelength btw 10<sup>5~10</sup>-4, if the wavelength is long enough, it is available to see behind the wall.</p>
+<p>Modulation is the process of extracting the information signal from a modulated carrier signal.</p>
+<p>Radiofrequency transmitter modulator<br>
+Radio frequency receiver demodulator</p>
+<p>I(t)cos(wt) + Q(t)sin(wt) = a(t)cos(wt+theta(t))</p>
+<p>Modern radio frequency receiver<br>
+Signal =&gt; bandpass filter =&gt; ......</p>
+<p>Average power consumption of resistors = V^2/2R<br>
+For caps (current is the derivative of voltage): sometimes it gives power, sometimes stores power.</p>
+<p>Parasitic caps create a low-impedance path at high frequency. (Vout becomes zero at high frequency). In order to create a bandpass filter, we want to resonate, so we add an inductor parallel to the caps.</p>
+<p>The hardest part is power amplifier to transmit the signal over a longer distance</p>
+<p>The problem is that if the device consumes large power, it requires high voltage too. But circuits now consume voltage less than 1V. and the antenna resistance is fixed.<br>
+Instead, we use transformers (2 inductors)</p>
+<p>Impedance transformer: CM connected to (LM to gnd). Comments “emoter”</p>
+<p>Oscillator:<br>
+During LC resonate, no energy is lost.<br>
+T = 2<em>pi</em>(LC)^0.5</p>
+<p>RF Mixers<br>
+An LTI system cannot multiply two signals</p>
+<p>Switching mixer (Vcontrol &gt; 0 = on)</p>
+<p>Any periodic waveform can be represented using Fourier series<br>
+Vout = p(t) * v(t)<br>
+By Fourier series, we get desired signal but also a bunch of unwanted signals, but we got bandpass filter.</p>
+<p>Summary:<br>
+Modern RF circuits use analog and digital techniques.<br>
+Important concepts related to RF circuits: noise, linearity……<br>
+RFIC designer are in high demand</p>
+<blockquote>
+<p>Q: When the frequency is low enough, we can easily generate sine and cosine. But for higher frequency it is not energy efficient.<br>
+R: Information separated to I and Q, multiply with oscillator(carrier wc) in between and add(using KCL) them together.</p>
+</blockquote>
+<blockquote>
+<p>Q: Driving force between RF industry? pushing frequency higher to get different part of wavelength. Inductors and caps for resonate are large, occupied lots of area. Can we replace inductor?</p>
+</blockquote>
+<p>Tunnel creation: focus the beam like laser, spacial diversity</p>
+<p>Technics to reduce parasitic caps, literally minimize length and width of wires, make circuit compact or 4 RF circuit, resonate cancelled out. make Transmission line</p>
+<blockquote>
+<p>Q: Negative caps?<br>
+R: Noise linearity issue</p>
+</blockquote>
+<h2 id="the-basic-of-silicon-photonic-circuits">The Basic of Silicon-Photonic Circuits </h2>
+<p><em>Prof. Sudip Shehkar, University of British Columbia, Canada</em></p>
+<p>Improve performance: speed, latency, parallelism //CMOS<br>
+Transceiver: transmitter and receiver</p>
+<p>Miniaturize discrete or bulky components //RF-CMOS</p>
+<p>CMOS SOI(Silicon on Insulator)</p>
+<p>Enable new application: Silicon photonics CMOS SOI</p>
+<p>CMOS strengths and weaknesses<br>
+Great:<br>
+High gain, switching, generating clk frequency up to 100s of GHz<br>
+Realizing complex functions with billions of transistors on a single chip</p>
+<p>Limitation:<br>
+Having limitations driving high-speed data from on chip to another over long distance, due to cu loss, interacting(sensing, detecting) with different particles and waves.</p>
+<p>Silicon photonics: //new tech, promising<br>
+Complement some challenges ex. Increase speed, reduce latency, reduce power.<br>
+Usage in data center, cloud</p>
+<p>Shrink the LIDAR on a small chip to lower the cost.</p>
+<p>Data centers are connected with optical fiber</p>
+<p>Frequency-dependent loss in Cu channel create inter-system interferences (ISI)<br>
+Loss increase at high rates and loss increase with length of interconnect =&gt; Equalizer helps. But consumes power</p>
+<p>Get rid off fiber, instead, using optical fiber for cable (less attenuated), and change the source to laser (tera Hz), couple the laser into photonic chip =&gt; silicon photonic<br>
+Optical switch (modulator) to block the laser driven by electronic. (amplitude modulation)</p>
+<p>Fiber sending different length, different light, less interrupt with each other<br>
+Support multiple data streams, each on a separated wavelength, on the same waveguide of fiver (WDM)</p>
+<p>Electro-optical link: since now we are talking about tera hertz, the wavelength is extremely small, so we need electronic control.</p>
+<p>Y-branch splitter: 50/50 intensity splitter with output ports identical in phase</p>
+<p>Photodetector/photodiodes (PDs)<br>
+Produce current from current phonons</p>
+<p>Passives:<br>
+Mach-zehnder interferometer (MZI) //split then add up<br>
+I0 = (Iin/2)*(1+cos(theta)), so we control the modulator by different phase shift<br>
+By adding different voltage, we get different phase shift, and we get the current</p>
+<p>N is a measure of reduction of velocity of light in a medium vs vacuum, v=c/n<br>
+Change n to change velocity, l=v<em>t=c</em>t/n</p>
+<p>Thermal phase shifter (TPS): add a metal resistor near the Si waveguide, heating up when a current flow through it.</p>
+<p>High-speed phase shifter<br>
+Dope the Si rib waveguide to make a p-n junction</p>
+<p>Diode also have parasitics caps, so we use transmission line to lower caps or cancel out with inductors</p>
+<p>Put both electronics and photons in Si-process: cointegrated and ……</p>
+<p>Biosensors: sensing refractive index, ring resonator (bandpass filter). We can drop blood on this ring to detect covid viruses, and we can scale it into other covid alpha, beta……</p>
+<p>=<mark>QA</mark>=<br>
+Send info with time as reference =&gt; synchronize</p>
+<p>Pulse amplitude modulation</p>
+<p>Noise consideration about PN junction modulator?</p>
+<p>Do I need to worried about refraction? Not a problem for the high speed circuit.<br>
+Whats the case we want refraction? Surface grating coupling, use it to combine lights.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
