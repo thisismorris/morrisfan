@@ -1,6 +1,6 @@
-# ISSCC Circuit Insights, Feb 17th, 2024
+# ISSCC 2024 Circuit Insights
 
-***Written by Morris Fan***
+***Written by Morris Fan @Marriott Hotel, San Francisco, Feb. 17, 2024***
 
 ## Fundamentals of Digital Circuit Design
 
@@ -197,134 +197,152 @@ Biopotential are small (uV-mV) and low-frequency (<10kHz) signals
 ## The Basic of Ratio Frequency (RF) Circuits
 *Prof. Hossein Hashemi, University of Southern California, USA*
 
-In the air, EM waves travel at the speed of light. Propagation speed is lower in another medium = distance/speed
+In the air, EM waves travel at the speed of light. 
+- Propagation speed is **lower** in another $medium = distance / speed$
 
-The electric and magnetic fields vary with time as sinusoids. The propagating wave is periodic in space as well. Wavelength is the special of the EM wave.
-Wavelength = speed/frequency. RF refers to wavelength btw 10^5~10^-4, if the wavelength is long enough, it is available to see behind the wall. 
+- The electric and magnetic fields vary with time as sinusoids. 
+- The propagating wave is periodic in space as well. 
+- Wavelength is the special of the EM wave.
+- $Wavelength = speed/frequency$
+- RF refers to wavelength btw $10^5 to 10^{-4}$, if the wavelength is long enough, it is available to see behind the wall. 
 
-Modulation is the process of extracting the information signal from a modulated carrier signal.
+> Modulation is the process of extracting the information signal from a modulated carrier signal.
 
-Radiofrequency transmitter modulator
-Radio frequency receiver demodulator
+**Radiofrequency transmitter modulator**
+**Radio frequency receiver demodulator**
 
-I(t)cos(wt) + Q(t)sin(wt) = a(t)cos(wt+theta(t))
+$I(t)cos(wt) + Q(t)sin(wt) = a(t)cos(wt+theta(t))$
 
-Modern radio frequency receiver
-Signal => bandpass filter => ......
+- Modern radio frequency receiver
+    - Signal => bandpass filter => ......
 
-Average power consumption of resistors = V^2/2R
-For caps (current is the derivative of voltage): sometimes it gives power, sometimes stores power.
+- Average power consumption of resistors = $V^2/2R$
+- For caps (current is the derivative of voltage): sometimes it gives power, sometimes stores power.
 
-Parasitic caps create a low-impedance path at high frequency. (Vout becomes zero at high frequency). In order to create a bandpass filter, we want to resonate, so we add an inductor parallel to the caps.
+- Parasitic caps create a low-impedance path at high frequency. (Vout becomes zero at high frequency). 
+    - In order to create a bandpass filter, we want to resonate, so we **add an inductor parallel** to the caps.
 
-The hardest part is power amplifier to transmit the signal over a longer distance
+**The hardest part is power amplifier to transmit the signal over a longer distance.**
 
-The problem is that if the device consumes large power, it requires high voltage too. But circuits now consume voltage less than 1V. and the antenna resistance is fixed.
+> The problem is that if the device consumes large power, it requires high voltage too. But circuits now consume voltage less than 1V. and the antenna resistance is fixed.
 Instead, we use transformers (2 inductors)
 
 Impedance transformer: CM connected to (LM to gnd). Comments “emoter”
 
-Oscillator:
-During LC resonate, no energy is lost.
-T = 2*pi*(LC)^0.5
+**Oscillator:**
+- During LC resonate, no energy is lost.
+- T = 2*pi*(LC)^0.5
 
-RF Mixers
-An LTI system cannot multiply two signals
+**RF Mixers:**
+- An LTI system cannot multiply two signals.
+    - Switching mixer (Vcontrol > 0 = on)
 
-Switching mixer (Vcontrol > 0 = on)
+- Any periodic waveform can be represented using Fourier series
+$Vout = p(t) * v(t)$
+By Fourier series, we get the desired signal but also a bunch of unwanted signals, but we got a bandpass filter.
 
-Any periodic waveform can be represented using Fourier series
-Vout = p(t) * v(t)
-By Fourier series, we get desired signal but also a bunch of unwanted signals, but we got bandpass filter.
-
-Summary:
-Modern RF circuits use analog and digital techniques.
-Important concepts related to RF circuits: noise, linearity……
-RFIC designer are in high demand
+**Summary:**
+- Modern RF circuits use analog and digital techniques.
+- Important concepts related to RF circuits: noise, linearity……
+- RFIC designer are in high demand
 
 > Q: When the frequency is low enough, we can easily generate sine and cosine. But for higher frequency it is not energy efficient.
 > R: Information separated to I and Q, multiply with oscillator(carrier wc) in between and add(using KCL) them together. 
 
 > Q: Driving force between RF industry? pushing frequency higher to get different part of wavelength. Inductors and caps for resonate are large, occupied lots of area. Can we replace inductor?
-
-Tunnel creation: focus the beam like laser, spacial diversity
-
-Technics to reduce parasitic caps, literally minimize length and width of wires, make circuit compact or 4 RF circuit, resonate cancelled out. make Transmission line
+R: Tunnel creation: focus the beam like a laser, spacial diversity
+>  - Technics to reduce parasitic caps, literally minimize length and width of wires, make circuit compact or 4 RF circuit, resonate cancelled out. make Transmission line
 
 > Q: Negative caps? 
 > R: Noise linearity issue
 
-
-
 ## The Basic of Silicon-Photonic Circuits
 *Prof. Sudip Shehkar, University of British Columbia, Canada*
 
-Improve performance: speed, latency, parallelism //CMOS
-Transceiver: transmitter and receiver
+**Improve performance:** 
+- speed
+- latency
+- parallelism //CMOS
+
+**Transceiver:** 
+- transmitter and receiver
 
 Miniaturize discrete or bulky components //RF-CMOS
 
-CMOS SOI(Silicon on Insulator)
+CMOS SOI (Silicon on Insulator)
 
-Enable new application: Silicon photonics CMOS SOI
+Enable new application: 
+- Silicon photonics CMOS SOI
 
-CMOS strengths and weaknesses
-Great:
-High gain, switching, generating clk frequency up to 100s of GHz
+**CMOS strengths and weaknesses**
+***Great:***
+- High gain
+- switching
+- generating clock frequency up to 100s of GHz
+
 Realizing complex functions with billions of transistors on a single chip
 
-Limitation:
-Having limitations driving high-speed data from on chip to another over long distance, due to cu loss, interacting(sensing, detecting) with different particles and waves.
+***Limitation:***
+- Having limitations driving high-speed data from one chip to another over a long distance, due to Cu loss, interacting(sensing, detecting) with different particles and waves.
 
-Silicon photonics: //new tech, promising
-Complement some challenges ex. Increase speed, reduce latency, reduce power.
-Usage in data center, cloud
+***Silicon photonics:*** 
+- new tech
+- promising to Complement some challenges ex. Increase speed, reduce latency, and reduce power.
+- Usage in data center, cloud
+- Shrink the LIDAR on a small chip to lower the cost.
+- Data centers are connected to optical fiber.
 
-Shrink the LIDAR on a small chip to lower the cost.
+Frequency-dependent loss in the Cu channel creates inter-system interferences (ISI)
 
-Data centers are connected with optical fiber
+Loss increases at high rates and loss increases with the length of interconnect => Equalizer helps. **But consumes power**
 
-Frequency-dependent loss in Cu channel create inter-system interferences (ISI)
-Loss increase at high rates and loss increase with length of interconnect => Equalizer helps. But consumes power
+Get rid of fiber, instead, using optical fiber for cable (less attenuated), and change the source to laser (tera Hz), couple the laser into photonic chip => silicon photonic
 
-Get rid off fiber, instead, using optical fiber for cable (less attenuated), and change the source to laser (tera Hz), couple the laser into photonic chip => silicon photonic
-Optical switch (modulator) to block the laser driven by electronic. (amplitude modulation)
+Optical switch (modulator) to block the laser-driven by electronic. (amplitude modulation)
 
-Fiber sending different length, different light, less interrupt with each other
-Support multiple data streams, each on a separated wavelength, on the same waveguide of fiver (WDM)
+**Fiber sending:**
+- different lengths
+- different light
+- less interrupt with each other
+- Support multiple data streams, each on a separate wavelength, on the same waveguide of fiver (WDM)
 
-Electro-optical link: since now we are talking about tera hertz, the wavelength is extremely small, so we need electronic control.
+**Electro-optical link:**
+- since now we are talking about terahertz, the wavelength is extremely small, so we need electronic control.
 
-Y-branch splitter: 50/50 intensity splitter with output ports identical in phase
+**Y-branch splitter:** 
+- 50/50 intensity splitter with output ports identical in phase
 
-Photodetector/photodiodes (PDs)
-Produce current from current phonons
+**Photodetector/photodiodes (PDs)**
+- Produce current from current phonons
 
-Passives: 
-Mach-zehnder interferometer (MZI) //split then add up
-I0 = (Iin/2)*(1+cos(theta)), so we control the modulator by different phase shift
-By adding different voltage, we get different phase shift, and we get the current
+**Passives:**
+- Mach-Zehnder interferometer (MZI) //split then add up
+- $I0 = (Iin/2)*(1+cos(theta))$, so we control the modulator by different phase shifts.
+- By adding different voltages, we get different phase shifts, and we get the current
 
-N is a measure of reduction of velocity of light in a medium vs vacuum, v=c/n
-Change n to change velocity, l=v*t=c*t/n
+N is a measure of the reduction of the velocity of light in a medium vs vacuum, $v=c/n$.
+Change n to change velocity, $l=v*t=c*t/n$
 
-Thermal phase shifter (TPS): add a metal resistor near the Si waveguide, heating up when a current flow through it.
+**Thermal phase shifter (TPS):**
+- add a metal resistor near the Si waveguide, heating up when a current flows through it.
 
-High-speed phase shifter
-Dope the Si rib waveguide to make a p-n junction
+**High-speed phase shifter:**
+- Dope the Si rib waveguide to make a p-n junction
 
-Diode also have parasitics caps, so we use transmission line to lower caps or cancel out with inductors
+The diode also has parasitics caps, so we use transmission lines to lower caps or cancel out with inductors.
 
 Put both electronics and photons in Si-process: cointegrated and ……
 
-Biosensors: sensing refractive index, ring resonator (bandpass filter). We can drop blood on this ring to detect covid viruses, and we can scale it into other covid alpha, beta……
+**Biosensors:** 
+- sensing refractive index, ring resonator (bandpass filter). 
+- We can drop blood on this ring to detect COVID-19 viruses, and we can scale it into other COVID-19 alpha, beta……
 
-===QA===
-Send info with time as reference => synchronize
+> Q: Send info with time as reference
+R: Synchronize
 
-Pulse amplitude modulation
+> Pulse amplitude modulation
 
-Noise consideration about PN junction modulator? 
+> Noise consideration about the PN junction modulator? 
 
-Do I need to worried about refraction? Not a problem for the high speed circuit. 
-Whats the case we want refraction? Surface grating coupling, use it to combine lights. 
+> Q: Do I need to worry about refraction? 
+R: Not a problem for the high-speed circuit. What's the case we want refraction? Surface grating coupling, use it to combine lights. 
