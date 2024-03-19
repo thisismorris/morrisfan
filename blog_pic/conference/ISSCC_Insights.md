@@ -2,6 +2,9 @@
 
 ***Written by Morris Fan @Marriott Hotel, San Francisco, Feb. 17, 2024***
 
+![Alt text](/img/morris.jpg "a title")
+
+
 ## Fundamentals of Digital Circuit Design
 
 *Prof. Jan M. Rabaey, University of California, Berkeley USA*
