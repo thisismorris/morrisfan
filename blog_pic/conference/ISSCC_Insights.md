@@ -2,8 +2,7 @@
 
 ***Written by Morris Fan @Marriott Hotel, San Francisco, Feb. 17, 2024***
 
-![Alt text](/img/morris.jpg "a title")
-
+[TOC]
 
 ## Fundamentals of Digital Circuit Design
 
@@ -349,3 +348,4 @@ R: Synchronize
 
 > Q: Do I need to worry about refraction? 
 R: Not a problem for the high-speed circuit. What's the case we want refraction? Surface grating coupling, use it to combine lights. 
+
