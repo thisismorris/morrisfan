@@ -1,5 +1,7 @@
 # Jewish Medical Ethics 
 
+[toc]
+
 ## Where did the term Jewish come from?
 
 ### 20240214
@@ -7,7 +9,7 @@
 The practitioner or patient, understands the bible, and religion for Jewish tradition. If it is relevant, what requirements and expiations are.
 
 
-Every person has equal life, you cont sacrifice one to save five.
+Every person has an equal life, you cont sacrifice one to save five.
 
 Give birth to baby, once the legs Is out, it is a life. Is the child trying to kill his mom’s life? 
 

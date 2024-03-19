@@ -1,5 +1,7 @@
 # Salary Negotiate
 
+[toc]
+
 ## Why Negotiate?
 
 - provides a way of assessing your needs
