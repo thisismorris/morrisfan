@@ -1,10 +1,11 @@
 # Jewish Medical Ethics 
 
-## Where the term Jewish comes?
+## Where did the term Jewish come from?
 
 ### 20240214
 
-Practitioner or patient, understand the bible, religion for jewish tradition. If it is relevant, what requirements and expiations are.
+The practitioner or patient, understands the bible, and religion for Jewish tradition. If it is relevant, what requirements and expiations are.
+
 
 Every person has equal life, you cont sacrifice one to save five.
 
