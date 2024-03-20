@@ -4,9 +4,7 @@
 
 [ ![](/img/morris.jpg)](/img/morris.jpg)
 
-![](/img/morris.jpg =100x20)
-
-
+<img src="/img/morris.jpg" alt="image" width="300" height="auto">
 
 [TOC]
 
