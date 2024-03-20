@@ -2,6 +2,8 @@
 
 ***Written by Morris Fan @Marriott Hotel, San Francisco, Feb. 17, 2024***
 
+[ ![](/img/morris.jpg)](/img/morris.jpg)
+
 [TOC]
 
 ## Fundamentals of Digital Circuit Design
