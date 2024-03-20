@@ -4,6 +4,10 @@
 
 [ ![](/img/morris.jpg)](/img/morris.jpg)
 
+![](/img/morris.jpg =100x20)
+
+
+
 [TOC]
 
 ## Fundamentals of Digital Circuit Design
