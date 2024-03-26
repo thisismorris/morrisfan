@@ -2,8 +2,7 @@
 
 ***Written by Morris Fan @Marriott Hotel, San Francisco, Feb. 17, 2024***
 
-<img src="/blog_pic/pics/isscc.jpg" alt="image" width="50%" height="auto" >
-<img src="/blog_pic/pics/pic_with_prof_jan.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/isscc.jpg" alt="image" width="50%" height="auto" ><img src="/blog_pic/pics/pic_with_prof_jan.jpg" alt="image" width="50%" height="auto" >
 
 [TOC]
 
