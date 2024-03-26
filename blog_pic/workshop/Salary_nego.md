@@ -78,5 +78,5 @@
 ### using a win-win approach
 - we both want the same thing (not a zero-sum game)
 - you have made me an offer and I want to be able to accept it
-- make your value visible; what differentiates you from a typical starting asst prof.
+- make your value visible; what differentiates you from a typical starting assistant prof.
 - how to respond to a high, spot-on, and, especially low offer
