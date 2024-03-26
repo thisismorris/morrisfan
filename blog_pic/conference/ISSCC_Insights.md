@@ -2,15 +2,16 @@
 
 ***Written by Morris Fan @Marriott Hotel, San Francisco, Feb. 17, 2024***
 
-[ ![](/img/morris.jpg)](/img/morris.jpg)
-
-<img src="/img/morris.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/isscc.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/pic_with_prof_jan.jpg" alt="image" width="50%" height="auto" >
 
 [TOC]
 
 ## Fundamentals of Digital Circuit Design
 
 *Prof. Jan M. Rabaey, University of California, Berkeley USA*
+
+<img src="/blog_pic/pics/prof_jan.jpg" alt="image" width="50%" height="auto" >
 
 **Compute, Communicate, Acquire/Act**
 
@@ -92,6 +93,8 @@ R: Increase density, CFet (PMOS over NMOS).
 ## CMOS Circuit for Biomedical Applications
 
 *Prof. Carolina Mora Lopez, IMEC, Leuven, Belgium*
+
+<img src="/blog_pic/pics/prof_carolina.jpg" alt="image" width="50%" height="auto" >
 
 **The complexity of the human brain v.s. technology.**
 Aiming to manage disease, ease pain……
@@ -200,8 +203,12 @@ Biopotential are small (uV-mV) and low-frequency (<10kHz) signals
 
 ## Lunch Networking
 
+<img src="/blog_pic/pics/lunch.jpg" alt="image" width="50%" height="auto" >
+
 ## The Basic of Ratio Frequency (RF) Circuits
 *Prof. Hossein Hashemi, University of Southern California, USA*
+
+<img src="/blog_pic/pics/prof_hossein.jpg" alt="image" width="50%" height="auto" >
 
 In the air, EM waves travel at the speed of light. 
 - Propagation speed is **lower** in another $medium = distance / speed$
@@ -250,7 +257,7 @@ By Fourier series, we get the desired signal but also a bunch of unwanted signal
 **Summary:**
 - Modern RF circuits use analog and digital techniques.
 - Important concepts related to RF circuits: noise, linearity……
-- RFIC designer are in high demand
+- RFIC designers are in high demand
 
 > Q: When the frequency is low enough, we can easily generate sine and cosine. But for higher frequency it is not energy efficient.
 > R: Information separated to I and Q, multiply with oscillator(carrier wc) in between and add(using KCL) them together. 
@@ -264,6 +271,8 @@ R: Tunnel creation: focus the beam like a laser, spacial diversity
 
 ## The Basic of Silicon-Photonic Circuits
 *Prof. Sudip Shehkar, University of British Columbia, Canada*
+
+<img src="/blog_pic/pics/prof_sudip.jpg" alt="image" width="50%" height="auto" >
 
 **Improve performance:** 
 - speed
