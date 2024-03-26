@@ -1,6 +1,6 @@
 # Salary Negotiate
 
-[toc]
+[TOC]
 
 ## Why Negotiate?
 
