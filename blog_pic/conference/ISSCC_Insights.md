@@ -93,7 +93,7 @@ R: Increase density, CFet (PMOS over NMOS).
 
 *Prof. Carolina Mora Lopez, IMEC, Leuven, Belgium*
 
-<img src="/blog_pic/pics/prof_carolina.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/prof_Carolina.jpg" alt="image" width="50%" height="auto" >
 
 **The complexity of the human brain v.s. technology.**
 Aiming to manage disease, ease pain……
@@ -207,7 +207,7 @@ Biopotential are small (uV-mV) and low-frequency (<10kHz) signals
 ## The Basic of Ratio Frequency (RF) Circuits
 *Prof. Hossein Hashemi, University of Southern California, USA*
 
-<img src="/blog_pic/pics/prof_hossein.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/prof_Hossein.jpg" alt="image" width="50%" height="auto" >
 
 In the air, EM waves travel at the speed of light. 
 - Propagation speed is **lower** in another $medium = distance / speed$
@@ -271,7 +271,7 @@ R: Tunnel creation: focus the beam like a laser, spacial diversity
 ## The Basic of Silicon-Photonic Circuits
 *Prof. Sudip Shehkar, University of British Columbia, Canada*
 
-<img src="/blog_pic/pics/prof_sudip.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/prof_Sudip.jpg" alt="image" width="50%" height="auto" >
 
 **Improve performance:** 
 - speed
