@@ -29,7 +29,7 @@
     - long term
 
 ## How - Basics of Negotiation
-- negotiation is a process, rather than a point in time event.
+- negotiation is a process, rather than a point-in-time event.
 - preparation is key: the process starts before you get to the offer. 
     - relocation
     - financial
@@ -52,7 +52,7 @@
     - past job salary
 
 ### your primary sources of leverage
-- info. about your "market value" using salary surveys, public databases, info. interview. 
+- info. about your "market value" using salary surveys, public databases, information interview. 
     - strong presentation skills are not enough
 - making your value visible
 - competing offers: in hand or potential
@@ -78,5 +78,5 @@
 ### using a win-win approach
 - we both want the same thing (not a zero-sum game)
 - you have made me an offer and I want to be able to accept it
-- make your value visible; what differentiates you from a typical starting assistant prof.
+- make your value visible; what differentiates you from a typical starting assistant professor
 - how to respond to a high, spot-on, and, especially low offer

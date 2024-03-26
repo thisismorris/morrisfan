@@ -17,7 +17,7 @@ Preventing the accidents is your obligation, like building a fence around your h
 
 ### 20240221
 
-**4 principles secular**
+**4 principles of secular**
 
 1. autonomy
 - 1914, the first Jewish supreme judge. Every human body has the right to do with their own body. 
