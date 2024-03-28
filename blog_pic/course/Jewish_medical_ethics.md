@@ -120,3 +120,5 @@ the physician is considered...
     - is termination considered acceptable?
     - every case is individualized
 
+Copyright © 2024, Chih-Chieh (Morris) Fan
+All rights reserved. Please mention my name and source code for reference. 

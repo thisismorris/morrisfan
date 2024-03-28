@@ -80,3 +80,6 @@
 - you have made me an offer and I want to be able to accept it
 - make your value visible; what differentiates you from a typical starting assistant professor
 - how to respond to a high, spot-on, and, especially low offer
+
+Copyright © 2024, Chih-Chieh (Morris) Fan
+All rights reserved. Please mention my name and source code for reference. 
