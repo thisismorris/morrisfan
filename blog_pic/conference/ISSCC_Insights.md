@@ -361,3 +361,5 @@ R: Synchronize
 > Q: Do I need to worry about refraction? 
 R: Not a problem for the high-speed circuit. What's the case we want refraction? Surface grating coupling, use it to combine lights. 
 
+Copyright © 2024, Chih-Chieh (Morris) Fan
+All rights reserved. Please mention my name and source code for reference. 
