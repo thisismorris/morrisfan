@@ -15,3 +15,6 @@ As the hardware continues to evolve, so does the need to accelerate AI algorithm
 During the lecture, a question arose about the rules of software that measure the capacity of the AI space. The answer was clear: software plays a pivotal role, especially when dealing with evolving AI models and the need to optimize memory management.
 
 In conclusion, AI is a remarkable technology, but it's essential to remember that it's not just a product. It's a tool that can solve real-world problems when harnessed effectively. The Taiwan Tech Summit was a remarkable experience that expanded my horizons and allowed me to engage with these cutting-edge ideas. I can't wait for Taiwan Tech Summit 2024
+
+Copyright © 2024, Chih-Chieh (Morris) Fan
+All rights reserved. Please mention my name and source code for reference. 
