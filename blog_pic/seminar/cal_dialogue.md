@@ -66,3 +66,6 @@ I would like to give applause to the person who held today's event: Andy Wu. Tha
 > Hung-Yi Lee: give a better package, make the people(scholar, researcher) staying in Taiwan be the top 10. The student enrolled is Increasing but we dont enough teaching assistant. 1400 students, can't take care each one. 
 
 <img src="/blog_pic/pics/caldia_withanna.jpg" alt="image" width="50%" height="auto" ><img src="/blog_pic/pics/caldia_anna.jpg" alt="image" width="50%" height="auto" >
+
+Copyright © 2024, Chih-Chieh (Morris) Fan
+All rights reserved. Please mention my name and source code for reference. 
