@@ -2,7 +2,7 @@
 
 ***Written by Morris Fan @MXIC Building - NTHU, Hsinchu, Jun. 02, 2023***
 
-<img src="/blog_pic/pics/pic_Chiang.jpg" alt="image" width="50%" height="auto" ><img src="/blog_pic/pics/pic_Lin.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/prof_Chiang.jpg" alt="image" width="50%" height="auto" ><img src="/blog_pic/pics/prof_Lin.jpg" alt="image" width="50%" height="auto" >
 
 [toc]
 

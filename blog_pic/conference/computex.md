@@ -2,7 +2,7 @@
 
 ***Written by Morris Fan @TaiNEX 2, Taipei, May. 31, 2023***
 
-<img src="/blog_pic/pics/computex-me.jpg" alt="image" width="50%" height="auto" ><img src="/blog_pic/pics/computec-badge.jpg" alt="image" width="50%" height="auto" >
+<img src="/blog_pic/pics/computex-me.jpg" alt="image" width="50%" height="auto" ><img src="/blog_pic/pics/computex-badge.jpg" alt="image" width="50%" height="auto" >
 
 ## Compare the old vision with the new, Computer rail tracing.
 - The five years. 
