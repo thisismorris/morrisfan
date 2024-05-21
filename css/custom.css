@@ -2,7 +2,7 @@
  * Your custom CSS file
  *************************************************************************/
 
-@font-face {
+ @font-face {
   font-family: Raleway;
   src: url("../fonts/Raleway-Regular.ttf");
 }
@@ -98,7 +98,7 @@ div {
 }
 
 th, td {
-  border: 1px solid black;
+  border: 1px solid transparent; /* Make borders transparent */
   border-collapse: collapse;
 }
 
