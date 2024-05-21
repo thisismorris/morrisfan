@@ -173,4 +173,10 @@ table, th, td {
   clear: both;
 }
 
+.transparent-margin-table {
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
 ul, li {margin-left: 1em; padding-left: 5px;}
