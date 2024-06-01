@@ -1,0 +1,888 @@
+<!DOCTYPE html><html><head>
+      <title>eetime</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/MORRIS/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.13/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="未來車發展技術國際論壇">未來車發展技術國際論壇 </h1>
+<p><em><strong>Written by Morris Fan @HNBK, Taipei, May 30, 2024</strong></em></p>
+<img src="../pics/eet.jpg" alt="image" width="100%" height="auto">
+<img src="../pics/eet_main.jpg" alt="image" width="100%" height="auto">
+
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#未來車發展技術國際論壇" class="md-toc-link"><p>未來車發展技術國際論壇</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#台灣發展智慧車用科技的實力" class="md-toc-link"><p>台灣發展智慧車用科技的實力</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#全球汽車產業大趨勢下台灣業者的機會在哪" class="md-toc-link">
+            <p>全球汽車產業大趨勢下台灣業者的機會在哪？</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#全球智慧電動車發展十大趨勢" class="md-toc-link">
+            <p>全球智慧電動車發展十大趨勢</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#台灣發展智慧車電產業發展面向" class="md-toc-link">
+            <p>台灣發展智慧車電產業發展面向</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#台灣半導體及ict的優勢" class="md-toc-link">
+            <p>台灣半導體及ICT的優勢</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#skymizer" class="md-toc-link"><p>Skymizer</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ai" class="md-toc-link">
+            <p>AI</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#雲端推論-gpu---asic" class="md-toc-link">
+            <p>雲端推論 (GPU -&gt; ASIC)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#端上推論" class="md-toc-link">
+            <p>端上推論</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#skymizer-llm系統" class="md-toc-link"><p>Skymizer LLM系統</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#skygenie-auto" class="md-toc-link">
+            <p>Skygenie Auto</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#optimize-ev-designs-with-discrete-components" class="md-toc-link"><p>Optimize EV Designs with Discrete Components</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#broadest-line" class="md-toc-link">
+            <p>Broadest Line</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#ko-lab" class="md-toc-link"><p>KO Lab</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#exterior-design-trend" class="md-toc-link"><p>Exterior Design Trend</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#chassis--body-proportions" class="md-toc-link">
+            <p>Chassis &amp; Body Proportions</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#skateboard-style-chassis" class="md-toc-link">
+            <p>Skateboard Style Chassis</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#空氣力學" class="md-toc-link">
+            <p>空氣力學</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#頭燈" class="md-toc-link">
+            <p>頭燈</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#尾燈" class="md-toc-link">
+            <p>尾燈</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#同值化的世代" class="md-toc-link">
+            <p>同值化的世代</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#interior-design-trend" class="md-toc-link"><p>Interior Design Trend</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#氛圍感" class="md-toc-link">
+            <p>氛圍感</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#空間活用" class="md-toc-link">
+            <p>空間活用</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#材料革新-環保材質" class="md-toc-link">
+            <p>材料革新-環保材質</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#同值性的標配" class="md-toc-link">
+            <p>同值性的標配</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#realizing-a-safe-and-free-mobility-society" class="md-toc-link">
+            <p>Realizing a Safe and Free Mobility Society</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#new-trends-and-challenges-of-ev" class="md-toc-link"><p>New Trends and Challenges of EV</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ev-powertrain" class="md-toc-link">
+            <p>EV Powertrain</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#connected-driving" class="md-toc-link">
+            <p>Connected Driving</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#sdv-development" class="md-toc-link">
+            <p>SDV Development</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#vehicle-network" class="md-toc-link">
+            <p>Vehicle Network</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#tops-vs-power-consumption" class="md-toc-link">
+            <p>TOPS vs. Power Consumption</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#智慧電動車產業發展的機會與挑戰" class="md-toc-link"><p>智慧電動車產業發展的機會與挑戰</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ttia" class="md-toc-link">
+            <p>TTIA</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#淡海新市鎮智慧交通試驗場域" class="md-toc-link">
+            <p>淡海新市鎮智慧交通試驗場域</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#its-world-congress" class="md-toc-link">
+            <p>ITS World Congress</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#adas鋪陳ads進階過程" class="md-toc-link">
+            <p>ADAS鋪陳ADS進階過程</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#智慧交通發展的四大標-三大主軸" class="md-toc-link">
+            <p>智慧交通發展的四大標、三大主軸</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#中國汽車生產世界第一" class="md-toc-link">
+            <p>中國汽車生產世界第一</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#5gaa-車聯網應用情境" class="md-toc-link">
+            <p>5GAA 車聯網應用情境</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#韓國c-its已為未來規劃" class="md-toc-link">
+            <p>韓國C-ITS已為未來規劃</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#電動車創新技術挑戰與解決方案" class="md-toc-link"><p>電動車創新技術挑戰與解決方案</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ev-market-intro" class="md-toc-link">
+            <p>EV Market Intro</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#design-concerns-for-eves-and-obc-onboard-charger" class="md-toc-link">
+            <p>Design Concerns for EVES and OBC (Onboard Charger)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ev-charging-and-battery-behavior-at-low-temperature" class="md-toc-link">
+            <p>EV Charging and Battery Behavior at Low Temperature</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ev-charging-system" class="md-toc-link">
+            <p>EV Charging system</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#evevse-regulations-and-testing" class="md-toc-link"><p>EV/EVSE regulations and testing</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#fast-charging-curve-benchmarks" class="md-toc-link">
+            <p>Fast charging curve benchmarks</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#the-challenges-and-potential-of-bi-directional-charging" class="md-toc-link">
+            <p>The challenges and potential of Bi-directional Charging</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#高效領航ev世代一站式電動車測試解決方案" class="md-toc-link"><p>高效領航EV世代：一站式電動車測試解決方案</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#電動車充電樁建制量" class="md-toc-link">
+            <p>電動車充電樁建制量</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#充電樁測試之趨勢" class="md-toc-link">
+            <p>充電樁測試之趨勢</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#電動車交流電充電樁測試系統" class="md-toc-link">
+            <p>電動車交流電充電樁測試系統</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#automotive-industry-trends-from-the-perspective-of-semiconductor-suppliers" class="md-toc-link"><p>Automotive industry trends from the perspective of semiconductor suppliers</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#case-trends" class="md-toc-link">
+            <p>"CASE" trends</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ee-architecture-evolution" class="md-toc-link">
+            <p>E/E Architecture Evolution</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#digital-twin" class="md-toc-link">
+            <p>Digital Twin</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#車用功率元件驗證分析" class="md-toc-link"><p>車用功率元件驗證分析</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#功率元件特性介紹" class="md-toc-link">
+            <p>功率元件特性介紹</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#車用功率元件驗證介紹" class="md-toc-link"><p>車用功率元件驗證介紹</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#aec-q004-zero-defect" class="md-toc-link">
+            <p>AEC Q004 Zero Defect</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#temperature-range-of-aec-standard" class="md-toc-link">
+            <p>Temperature range of AEC standard</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#失效分析工具選用" class="md-toc-link">
+            <p>失效分析工具選用</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#msic-technology-in-e-mobility-and-case-study" class="md-toc-link">
+            <p>mSiC Technology in E-Mobility and Case Study</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+<h2 id="台灣發展智慧車用科技的實力">台灣發展智慧車用科技的實力 </h2>
+<p><strong>沈舉三 秘書長, TADA</strong></p>
+<img src="../pics/eet_tada.jpg" alt="image" width="100%" height="auto">
+<p>先進車協 成立宗旨：推動台灣ICT產業融入先進智能汽車領域。</p>
+<ul>
+<li><strong>形-勢-策</strong>
+<ul>
+<li><strong>形</strong>：客觀的調查及描述</li>
+<li><strong>勢</strong>：個人主觀的研析</li>
+<li><strong>策</strong>：取捨及優先順序</li>
+</ul>
+</li>
+</ul>
+<h3 id="全球汽車產業大趨勢下台灣業者的機會在哪">全球汽車產業大趨勢下台灣業者的機會在哪？ </h3>
+<h3 id="全球智慧電動車發展十大趨勢">全球智慧電動車發展十大趨勢 </h3>
+<ul>
+<li><strong>智慧化</strong>
+<ul>
+<li>車室座艙智慧化</li>
+<li>萬車聯網資訊化</li>
+<li>軟硬控制整合化</li>
+<li>輔助駕駛智能化</li>
+<li>自架服務共享化</li>
+</ul>
+</li>
+<li><strong>電動化</strong>
+<ul>
+<li>電池需求白熱化</li>
+<li>充電環境完備化</li>
+<li>動力系統整合化</li>
+<li>車行底盤共用化</li>
+<li>車身空間彈性化</li>
+</ul>
+</li>
+</ul>
+<h3 id="台灣發展智慧車電產業發展面向">台灣發展智慧車電產業發展面向 </h3>
+<ul>
+<li>技術</li>
+<li>產品</li>
+<li>市場</li>
+<li>人才</li>
+<li>環境</li>
+<li>其他</li>
+</ul>
+<h3 id="台灣半導體及ict的優勢">台灣半導體及ICT的優勢 </h3>
+<ul>
+<li>更高效能</li>
+<li>更智能化</li>
+<li>網路連接</li>
+<li>系統整合</li>
+</ul>
+<blockquote>
+<p><strong>結語</strong>：如何善用台灣既有優勢並截長補短，從發展產品技術提升到提供解決方案，專注長項、跨域整合！</p>
+</blockquote>
+<h2 id="skymizer">Skymizer </h2>
+<p><strong>魏國章William Wei 副總, TADA</strong></p>
+<img src="../pics/eet_sky.jpg" alt="image" width="100%" height="auto">
+<h3 id="ai">AI </h3>
+<ul>
+<li>
+<p>CNN/RNN</p>
+</li>
+<li>
+<p>Transformer: ChatGPT，重點在於數據不在算力</p>
+<ul>
+<li>重點在於記憶體綁定</li>
+</ul>
+</li>
+<li>
+<p>LLM</p>
+<ul>
+<li>AI的作業系統</li>
+<li>Model-centric 生態系統
+<ul>
+<li>基礎預訓練的LLMs</li>
+<li>精細調整的領域LLMs</li>
+<li>精細調整的私人LLMs</li>
+</ul>
+</li>
+<li>通用領域和私人模型</li>
+</ul>
+</li>
+<li>
+<p>訓練</p>
+<ul>
+<li>OpenAI, Mistral, Anthropic, Google</li>
+</ul>
+</li>
+<li>
+<p>精細調整</p>
+</li>
+<li>
+<p>推論</p>
+<ul>
+<li>部署後</li>
+</ul>
+</li>
+</ul>
+<h3 id="雲端推論-gpu---asic">雲端推論 (GPU -&gt; ASIC) </h3>
+<ul>
+<li>最新的LLMs (&gt; 70B-1.5T 越來越大)</li>
+<li>專有和開源</li>
+<li>顛覆性的ASIC</li>
+</ul>
+<h3 id="端上推論">端上推論 </h3>
+<ul>
+<li>緊湊和小型LLMs</li>
+<li>開源</li>
+<li>顛覆性的ASIC</li>
+</ul>
+<h3 id="skymizer-llm系統">Skymizer LLM系統 </h3>
+<ul>
+<li>邊緣思維</li>
+<li>Skygenie &amp; SDK
+<ul>
+<li>AI Agent 框架</li>
+</ul>
+</li>
+</ul>
+<h4 id="skygenie-auto">Skygenie Auto </h4>
+<ul>
+<li>AI指揮中心語音代理</li>
+<li>精細調整的LLM</li>
+<li>集成</li>
+<li>輸入RAV4的PDF並訓練，然後可以無需源代碼進行語音控制<br>
+包括：
+<ul>
+<li>此車是否混合動力</li>
+<li>油箱在哪</li>
+<li>降下車窗</li>
+<li>打開雨刷</li>
+<li>播放搖滾音樂</li>
+</ul>
+</li>
+</ul>
+<h2 id="optimize-ev-designs-with-discrete-components">Optimize EV Designs with Discrete Components </h2>
+<p><strong>Michael Hsu Manager, Vishay</strong></p>
+<img src="../pics/eet_vishay.jpg" alt="image" width="100%" height="auto">
+<h3 id="broadest-line">Broadest Line </h3>
+<ul>
+<li>半導體</li>
+<li>被動元件<br>
+相較其他原建商擁有完整的系統</li>
+</ul>
+<h2 id="ko-lab">KO Lab </h2>
+<h3 id="exterior-design-trend">Exterior Design Trend </h3>
+<h4 id="chassis--body-proportions">Chassis &amp; Body Proportions </h4>
+<ul>
+<li>Porsche Taycan<br>
+福斯開發的新底盤，保有保時捷寬大設計</li>
+<li>BMW i5<br>
+用底盤黑色的部分遮蓋車身因底盤電池的高度</li>
+<li>Tesla Model 3</li>
+<li>Tesla Model Y</li>
+</ul>
+<h4 id="skateboard-style-chassis">Skateboard Style Chassis </h4>
+<ul>
+<li>上車身、下車身模組化，在設計上變化更多
+<ul>
+<li>碰撞潰縮問題尚未解決</li>
+<li>NVH</li>
+</ul>
+</li>
+</ul>
+<h4 id="空氣力學">空氣力學 </h4>
+<ul>
+<li>影響電池續航</li>
+<li>鋁圈節能蓋，減少渦流</li>
+<li>BMW 開閉式進氣孔</li>
+<li>數位後視鏡，法規及空氣力學</li>
+<li>後擋風玻璃，減輕車重</li>
+</ul>
+<h4 id="頭燈">頭燈 </h4>
+<ul>
+<li>外型中最貴的單一元件</li>
+<li>安全</li>
+<li>造型燈、主燈分離</li>
+</ul>
+<h4 id="尾燈">尾燈 </h4>
+<ul>
+<li>造型記憶點</li>
+<li>均光水平導光條</li>
+<li>塊狀壓克力</li>
+<li>近遠看不同</li>
+</ul>
+<h3 id="同值化的世代">同值化的世代 </h3>
+<ul>
+<li>保守市場導向發展</li>
+<li>消費者對CP值的追求，不排斥同值性高的車款</li>
+<li>中國24個月就可以造出一台車</li>
+</ul>
+<h3 id="interior-design-trend">Interior Design Trend </h3>
+<ul>
+<li>數位化、智能核心</li>
+<li>人偏好對一個物件說話、發指令</li>
+<li>隱藏式冷氣出風口，節省模具</li>
+</ul>
+<h4 id="氛圍感">氛圍感 </h4>
+<ul>
+<li>視覺效果更溫馨</li>
+<li>居家感、客廳</li>
+</ul>
+<h4 id="空間活用">空間活用 </h4>
+<h4 id="材料革新-環保材質">材料革新-環保材質 </h4>
+<ul>
+<li>成本較高</li>
+<li>從源頭使用環保材質開發新材料</li>
+</ul>
+<h4 id="同值性的標配">同值性的標配 </h4>
+<ul>
+<li>目前大家都差不多</li>
+<li>待AI進入市場</li>
+</ul>
+<blockquote>
+<p><strong>電動化走向智能化</strong></p>
+</blockquote>
+<h2 id="realizing-a-safe-and-free-mobility-society">Realizing a Safe and Free Mobility Society </h2>
+<p><strong>Alan Murata Taiwan 台灣村田</strong></p>
+<p>以製造電容為最大宗，目前也著手研發被動元件及RF電路</p>
+<h2 id="new-trends-and-challenges-of-ev">New Trends and Challenges of EV </h2>
+<p><strong>DEKRA</strong></p>
+<h3 id="ev-powertrain">EV Powertrain </h3>
+<ul>
+<li>MHEV
+<ul>
+<li>並聯</li>
+</ul>
+</li>
+<li>HEV/PHEV</li>
+<li>BEV</li>
+<li>REEV
+<ul>
+<li>串聯</li>
+<li>掛一個發電機幫電池充電</li>
+</ul>
+</li>
+<li>Fuel Cell氫電池
+<ul>
+<li>高壓電</li>
+</ul>
+</li>
+</ul>
+<h3 id="connected-driving">Connected Driving </h3>
+<ul>
+<li>自動駕駛</li>
+<li>共享</li>
+</ul>
+<h3 id="sdv-development">SDV Development </h3>
+<ul>
+<li>
+<p>ECU (Electric Control Unit)</p>
+<ul>
+<li>目前每個部件分開
+<ul>
+<li>照明</li>
+<li>車身</li>
+<li>ADAS</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DCU (Domain Control Unit)</p>
+</li>
+<li>
+<p>ZCU (Zonal Control Unit)</p>
+<ul>
+<li>車上計算</li>
+<li>模組化，避免每次更動硬體，可以直接改軟體</li>
+</ul>
+</li>
+</ul>
+<h3 id="vehicle-network">Vehicle Network </h3>
+<ul>
+<li>大量數據來自HPC，交換機需要處理</li>
+</ul>
+<h3 id="tops-vs-power-consumption">TOPS vs. Power Consumption </h3>
+<ul>
+<li>ADAS -&gt; L2+ -&gt; L5</li>
+<li>Tesla的駕駛模式儘管開啟FSD，仍叫駕駛將雙手放在方向盤上(L2)，因為運算模式仍不足以支持Tesla用L4, L5</li>
+</ul>
+<blockquote>
+<p><strong>Summary: EV</strong></p>
+</blockquote>
+<h2 id="智慧電動車產業發展的機會與挑戰">智慧電動車產業發展的機會與挑戰 </h2>
+<p><strong>吳榮煌 博士 台灣車聯網產業聯盟顧問</strong></p>
+<h3 id="ttia">TTIA </h3>
+<ul>
+<li>協助政策法規制定</li>
+<li>協調溝通</li>
+<li>未來目標 - 車聯網資通訊技術推動</li>
+</ul>
+<h3 id="淡海新市鎮智慧交通試驗場域">淡海新市鎮智慧交通試驗場域 </h3>
+<ul>
+<li>新北市自駕車測試</li>
+</ul>
+<h3 id="its-world-congress">ITS World Congress </h3>
+<ul>
+<li>
+<p>運輸轉型</p>
+<ul>
+<li>自動駕駛</li>
+<li>無人機</li>
+</ul>
+</li>
+<li>
+<p>發展目標</p>
+<ul>
+<li>智慧車 + 聯網車 + 自駕車 + 無人機</li>
+<li>數位基建 + 基建投資</li>
+</ul>
+</li>
+</ul>
+<h3 id="adas鋪陳ads進階過程">ADAS鋪陳ADS進階過程 </h3>
+<ul>
+<li>自駕車系統功能 (民間企業)
+<ul>
+<li>感測器</li>
+<li>策略</li>
+<li>控制</li>
+</ul>
+</li>
+</ul>
+<h3 id="智慧交通發展的四大標-三大主軸">智慧交通發展的四大標、三大主軸 </h3>
+<ul>
+<li>
+<p>安全</p>
+</li>
+<li>
+<p>便捷</p>
+</li>
+<li>
+<p>舒適</p>
+</li>
+<li>
+<p>環保</p>
+</li>
+<li>
+<p>go safe</p>
+</li>
+<li>
+<p>go smart</p>
+</li>
+<li>
+<p>go green</p>
+</li>
+</ul>
+<h3 id="中國汽車生產世界第一">中國汽車生產世界第一 </h3>
+<ul>
+<li>相較去年成長35%</li>
+<li>Apple退出智慧車，專攻AI, 大數據</li>
+</ul>
+<h3 id="5gaa-車聯網應用情境">5GAA 車聯網應用情境 </h3>
+<ul>
+<li>CV</li>
+<li>AV</li>
+<li>EV</li>
+<li>聯網車 ≠ 車聯網</li>
+</ul>
+<h3 id="韓國c-its已為未來規劃">韓國C-ITS已為未來規劃 </h3>
+<h2 id="電動車創新技術挑戰與解決方案">電動車創新技術挑戰與解決方案 </h2>
+<p><strong>Steve Cheng, Chroma</strong></p>
+<img src="../pics/eet_chroma.jpg" alt="image" width="100%" height="auto">
+<h3 id="ev-market-intro">EV Market Intro </h3>
+<ul>
+<li>未來休息站廣設充電樁</li>
+</ul>
+<h3 id="design-concerns-for-eves-and-obc-onboard-charger">Design Concerns for EVES and OBC (Onboard Charger) </h3>
+<ul>
+<li>更高壓、充電速度更快</li>
+</ul>
+<h3 id="ev-charging-and-battery-behavior-at-low-temperature">EV Charging and Battery Behavior at Low Temperature </h3>
+<ul>
+<li>low-temperature effect higher internal resistance</li>
+</ul>
+<h3 id="ev-charging-system">EV Charging system </h3>
+<ul>
+<li>AC1, AC2</li>
+<li>wireless charger</li>
+</ul>
+<h3 id="evevse-regulations-and-testing">EV/EVSE regulations and testing </h3>
+<ul>
+<li>CCS1, CCS2</li>
+<li>HPC</li>
+<li>MCS (3000 A)</li>
+</ul>
+<h4 id="fast-charging-curve-benchmarks">Fast charging curve benchmarks </h4>
+<ul>
+<li>KIA (Korean car) adopt 800V fast charging</li>
+</ul>
+<h3 id="the-challenges-and-potential-of-bi-directional-charging">The challenges and potential of Bi-directional Charging </h3>
+<ul>
+<li>V2L</li>
+<li>V3H</li>
+<li>V2B</li>
+<li>V2G</li>
+<li>回饋電網</li>
+</ul>
+<h2 id="高效領航ev世代一站式電動車測試解決方案">高效領航EV世代：一站式電動車測試解決方案 </h2>
+<p><em>AC Power Corp.鎰福電子</em></p>
+<img src="../pics/eet_preen.jpg" alt="image" width="100%" height="auto">
+<h3 id="電動車充電樁建制量">電動車充電樁建制量 </h3>
+<ul>
+<li>10台電動車; 1台充電樁</li>
+<li>直流/交流樁是未來趨勢？
+<ul>
+<li>中國規定交車需附贈家用充電樁</li>
+<li>DC充電雖快，但易發熱</li>
+<li>PLC test不同</li>
+</ul>
+</li>
+</ul>
+<h3 id="充電樁測試之趨勢">充電樁測試之趨勢 </h3>
+<ul>
+<li>高電壓/高功率快充
+<ul>
+<li>Tesla水冷降溫</li>
+</ul>
+</li>
+<li>自動化測試與智慧管理</li>
+<li>V2G</li>
+</ul>
+<h3 id="電動車交流電充電樁測試系統">電動車交流電充電樁測試系統 </h3>
+<ul>
+<li>充電倉燒機老化測試</li>
+<li>已被國內實驗室採用</li>
+<li>Tesla*10 or A bus that fits 40 people?</li>
+<li>安規測試儀</li>
+</ul>
+<h2 id="automotive-industry-trends-from-the-perspective-of-semiconductor-suppliers">Automotive industry trends from the perspective of semiconductor suppliers </h2>
+<p><em>RENESAS ELECTRONICS CORP.</em></p>
+<img src="../pics/eet_renesas.jpg" alt="image" width="100%" height="auto">
+<h3 id="case-trends">"CASE" trends </h3>
+<ul>
+<li>connected</li>
+<li>autonomous</li>
+<li>shared/service</li>
+<li>electrified</li>
+</ul>
+<h3 id="ee-architecture-evolution">E/E Architecture Evolution </h3>
+<ul>
+<li>distributed architecture
+<ul>
+<li>complex</li>
+</ul>
+</li>
+<li>centralized architecture
+<ul>
+<li>OTA</li>
+<li>scalable software development</li>
+<li>wiring harness reduction</li>
+<li>較容易檢修</li>
+</ul>
+</li>
+<li>zone architecture
+<ul>
+<li>further OTA software upgradability</li>
+<li>further reduction of Wiring harness</li>
+<li>4 wheels on an iPhone</li>
+</ul>
+</li>
+</ul>
+<h3 id="digital-twin">Digital Twin </h3>
+<h2 id="車用功率元件驗證分析">車用功率元件驗證分析 </h2>
+<p><em>Chang</em></p>
+<h3 id="功率元件特性介紹">功率元件特性介紹 </h3>
+<ul>
+<li>市場趨勢 - 2029年達50億美元</li>
+<li>功率 vs. 頻率
+<ul>
+<li>GaN vs. SiC</li>
+</ul>
+</li>
+</ul>
+<h3 id="車用功率元件驗證介紹">車用功率元件驗證介紹 </h3>
+<ul>
+<li>跨足車用供應鏈門票
+<ul>
+<li>車用產品安全性認證 ISO 26262</li>
+<li>車用製造認證 IATF 16949:16</li>
+<li>車用產品可靠度驗證 Automotive electronics council component technical committee</li>
+</ul>
+</li>
+</ul>
+<h4 id="aec-q004-zero-defect">AEC Q004 Zero Defect </h4>
+<ul>
+<li>定義使用者與供應商的IC產品如何運用工具與製程達到零缺陷目標</li>
+</ul>
+<h4 id="temperature-range-of-aec-standard">Temperature range of AEC standard </h4>
+<ul>
+<li>general temp range</li>
+</ul>
+<h3 id="失效分析工具選用">失效分析工具選用 </h3>
+<h2 id="msic-technology-in-e-mobility-and-case-study">mSiC Technology in E-Mobility and Case Study </h2>
+<p><em>Leo Lin, Microship</em></p>
+<img src="../pics/eet_mc.jpg" alt="image" width="100%" height="auto">
+<p>Copyright © 2024, Chih-Chieh (Morris) Fan<br>
+All rights reserved. Please mention my name and source code for reference.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
