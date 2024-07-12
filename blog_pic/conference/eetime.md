@@ -387,7 +387,7 @@
 
 ## mSiC Technology in E-Mobility and Case Study
 
-*Leo Lin, Microship*
+*Leo Lin, Microchip*
 
 <img src="/blog_pic/pics/eet_mc.jpg" alt="image" width="100%" height="auto" >
 
