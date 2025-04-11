@@ -80,6 +80,17 @@
             width: 24px;
             height: 24px;
         }
+        #clustrmaps-container {
+            width: 150px; /* adjust as needed */
+            height: 150px;
+            overflow: hidden;
+            position: fixed;
+            bottom: 10px;
+            right: 10px; /* places it in the bottom-right corner */
+            z-index: 9999;
+            transform: scale(0.6); /* scales the globe down */
+            transform-origin: bottom right;
+        }
     </style>
 </head>
 
@@ -154,10 +165,17 @@
                     </div>
                 </div>
                 <div class="flex-row">
+                    
                 </div>
             </div>
         </div>
     </div>
 </body>
-
+<div id="clustrmaps-container">
+    <script 
+      type="text/javascript" 
+      id="clstr_globe" 
+      src="//clustrmaps.com/globe.js?d=YX_vPVD1Db-PPxg6Ggatl62V5XFVAPkPHia3OKg77lk">
+    </script>
+  </div>
 </html>
